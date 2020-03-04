@@ -1,8 +1,7 @@
-==========================================================================
 README
 ==========================================================================
-Author : Christopher Torng
-Date   : June 7, 2019
+- Author : Christopher Torng
+- Date   : June 7, 2019
 
 This is a 45nm ASIC design kit for mflowgen, a modular ASIC/FPGA flow
 generator:
