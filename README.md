@@ -33,6 +33,26 @@ at its github repo.
 Modifications -- 03/04/2020
 --------------------------------------------------------------------------
 
+Changes to allow a small combination design (GcdUnit) to pass Calibre LVS:
+
+-  adk.tcl
+-  rtk-stream-out.map
+-  stdcells-bc.lib
+-  stdcells-wc.lib
+-  stdcells.cdl
+-  stdcells.gds
+-  stdcells.lef
+-  stdcells.lib
+-  stdcells.v
+
+New WELLTAP_X1 stdcell added. The rtk-stream-out.map now has layer
+numbers that match the Calibre DRC/LVS rule decks and stdcells.gds
+layer numbers.
+
+--------------------------------------------------------------------------
+Modifications -- 03/04/2020
+--------------------------------------------------------------------------
+
 Change:
 
 - rtk-tech.lef: One-line change to set MANUFACTURINGGRID to 0.0025 instead

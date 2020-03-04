@@ -2098,6 +2098,20 @@ M_instance_315 S net_005 VDD VDD PMOS_VTL W=0.630000U L=0.050000U
 
 ********************************************************************************
 *                                                                              *
+* Cellname:   WELLTAP_X1.                                                      *
+*                                                                              *
+* Technology: NCSU FreePDK 45nm.                                               *
+* Format:     Cdl.                                                             *
+*                                                                              *
+* Handwritten by Christopher Torng, clt67@cornell.edu                          *
+*                                                                              *
+********************************************************************************
+.SUBCKT WELLTAP_X1 VDD VSS 
+*.PININFO VDD:P VSS:G 
+.ENDS 
+
+********************************************************************************
+*                                                                              *
 * Cellname:   FILLCELL_X1.                                                     *
 *                                                                              *
 * Technology: NCSU FreePDK 45nm.                                               *
