@@ -16,7 +16,7 @@ LVS REPORT OPTION N
 LVS REPORT MAXIMUM 50
 MASK RESULTS DATABASE maskdb
 
-precision 2000
+precision 10000
 resolution 250
 
 TEXT LAYER metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10
