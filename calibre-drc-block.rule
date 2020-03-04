@@ -1,0 +1,1097 @@
+////////////////////////////////////////////////////////////
+// DEFINE BOOLEAN LAYERS
+////////////////////////////////////////////////////////////
+LAYOUT USE DATABASE PRECISION YES
+
+layer nwell 3
+layer pwell 2
+layer active 1
+layer nimplant 4
+layer pimplant 5
+layer vtg 6
+layer vth 7
+layer poly 9
+layer contact 10
+layer metal1 11
+layer via1 12
+layer metal2 13
+layer via2 14
+layer metal3 15
+layer via3 16
+layer metal4 17
+layer via4 18
+layer metal5 19
+layer via5 20
+layer metal6 21
+layer via6 22
+layer metal7 23 
+layer via7 24
+layer metal8 25
+layer via8 26
+layer metal9 27
+layer via9 28
+layer metal10 29
+
+//Enabling incremental connectivity for antenna rule checks
+DRC Incremental Connect Yes
+
+
+well = nwell OR pwell
+gate = poly AND active
+implant = nimplant OR pimplant
+fieldpoly = poly NOT active
+vt = vtg OR vth
+contactenc1 = active OR poly
+contactenc = contactenc1 AND metal1
+diode = contact AND active
+
+GROUP mask_check
+Well.2 Well.4 Poly.1 Poly.2 Poly.3 Poly.4 Poly.5 Poly.6
+Active.1 Active.2 Active.3 Active.4 Implant.1 Implant.2 
+Implant.3 Implant.4 Contact.1 Contact.2 Contact.3 Contact.4
+Contact.5 Contact.6 Metal1.1 Metal1.2 Metal1.3 
+
+
+
+Well.1 {
+@Nwell and Pwell must not overlap
+AND nwell pwell
+}
+
+Well.2 {
+@Min spacing of pwell to nwell = 0.225
+EXTERNAL nwell pwell < 0.225
+}
+
+Well.4 {
+@Min width of well = 0.2
+INTERNAL well < 0.2
+}
+
+Poly.1 {
+@Min width of poly = 0.05
+INTERNAL poly < 0.05
+}
+
+Poly.2 {
+@Min spacing of gate poly = 0.14
+EXTERNAL gate < 0.14
+}
+
+Poly.3 {
+@Min extension of poly past active = 0.05
+ENCLOSURE active poly < 0.05
+}
+
+Poly.4 {
+@Minimum active enclosure of gate = 0.07
+ENCLOSURE poly active < 0.07
+}
+
+Poly.5 {
+@Minimum spacing of poly to active = 0.05
+EXTERNAL poly active < 0.05
+}
+
+Poly.6 {
+@Minimum spacing of field poly = 0.075
+EXTERNAL fieldpoly < 0.075
+}
+
+Active.1 {
+@Minimum width of active = 0.09
+INTERNAL active < 0.09
+}
+
+Active.2 {
+@Minimum spacing of active areas =  0.08
+EXTERNAL active < 0.08
+}
+
+Active.3 {
+@Minimum well enclosure of active = 0.055
+ENCLOSURE active well < 0.055
+}
+
+Active.4 {
+@Active must be inside well
+NOT active well
+}
+
+Implant.1 {
+@Minimum spacing of implant to gate = 0.07
+EXTERNAL implant gate < 0.07
+}
+
+Implant.2 {
+@Minimum spacing of implant to contact = 0.025
+EXTERNAL implant contact < 0.025
+}
+
+Implant.3 {
+@Minimum spacing of implant = 0.045
+EXTERNAL implant < 0.045
+}
+
+Implant.4 {
+@Minimum width of implant = 0.045
+INTERNAL implant < 0.045
+}
+
+Implant.6 {
+@Nimplant and pimplant must not overlap
+AND nimplant pimplant
+}
+
+Contact.1 {
+@Minimum width of contact = 0.065
+INTERNAL contact < 0.065
+}
+
+Contact.2 {
+@Minimum spacing of contact = 0.075
+EXTERNAL contact < 0.075
+}
+
+Contact.3 {
+@Contact must be inside metal1 and active or poly
+NOT contact contactenc
+}
+
+Contact.4 {
+@Minimum active enclosure of contact = 0.005
+ENCLOSURE contact active < 0.005
+}
+
+Contact.5 {
+@Minimum poly enclosure of contact = 0.005
+ENCLOSURE contact poly < 0.005
+}
+
+Contact.6 {
+@Minimum spacing of contact to poly = 0.035
+EXTERNAL poly contact < 0.035
+}
+
+Metal1.1 {
+@Minimum width of metal1 = 0.065
+INTERNAL metal1 < 0.065
+}
+
+Metal1.2 {
+@Minimum spacing of metal1 = 0.065
+EXTERNAL metal1 < 0.065
+}
+
+Metal1.3 {
+@Metal1 must extend past contact by 0.035 on two opposite sides
+RECTANGLE ENCLOSURE contact metal1
+GOOD 0.00 0.035 OPPOSITE 0.00 0.035 OPPOSITE
+}
+
+Metal1.4 {
+@Metal1 must extend past via1 by 0.035 on two opposite sides
+RECTANGLE ENCLOSURE via1 metal1
+GOOD 0.00 0.035 OPPOSITE 0.00 0.035 OPPOSITE
+}
+
+Via1.1 {
+@Minimum width of via1 = 0.065
+INTERNAL via1 < 0.065
+}
+
+Via1.2 {
+@Minimum spacing of via1 = 0.075
+EXTERNAL via1 < 0.075
+}
+
+Via1.3 {
+@Via1 must be inside metal1
+NOT via1 metal1
+}
+
+Via1.4 {
+@Via1 must be inside metal2
+NOT via1 metal2
+}
+
+Metal2.1 {
+@Minimum width of metal2 = 0.07
+INTERNAL metal2 < 0.07
+}
+
+Metal2.2 {
+@Minimum spacing of metal2 = 0.07
+EXTERNAL metal2 < 0.07
+}
+
+Metal2.3 {
+@Metal2 must extend past via1 by 0.035 on two opposite sides
+RECTANGLE ENCLOSURE via1 metal2
+GOOD 0.00 0.035 OPPOSITE 0.00 0.035 OPPOSITE
+}
+
+Metal2.4 {
+@Metal2 must extend past via2 by 0.035 on two opposite sides
+RECTANGLE ENCLOSURE via2 metal2
+GOOD 0.00 0.035 OPPOSITE 0.00 0.035 OPPOSITE
+}
+
+Via2.1 {
+@Minimum width of via2 = 0.07
+INTERNAL via2 < 0.065
+}
+
+Via2.2 {
+@Minimum spacing of via2 = 0.085
+EXTERNAL via2 < 0.075
+}
+
+Via2.3 {
+@Via2 must be inside metal2
+NOT via2 metal2
+}
+
+Via2.4 {
+@Via2 must be inside metal3
+NOT via2 metal3
+}
+
+Metal3.1 {
+@Minimum width of metal3 = 0.07
+INTERNAL metal3 < 0.07
+}
+
+Metal3.2 {
+@Minimum spacing of metal3 = 0.07
+EXTERNAL metal3 < 0.07
+}
+
+Metal3.3 {
+@Metal3 must extend past via2 by 0.035 on two opposite sides
+RECTANGLE ENCLOSURE via2 metal3
+GOOD 0.00 0.035 OPPOSITE 0.00 0.035 OPPOSITE
+}
+
+Metal3.4 {
+@Metal3 must extend past via3 by 0.035 on two opposite sides
+RECTANGLE ENCLOSURE via3 metal3
+GOOD 0.00 0.035 OPPOSITE 0.00 0.035 OPPOSITE
+}
+
+Via3.1 {
+@Minimum width of via3 = 0.07
+INTERNAL via3 < 0.065
+}
+
+Via3.2 {
+@Minimum spacing of via3 = 0.085
+EXTERNAL via3 < 0.075
+}
+
+Via3.3 {
+@Via3 must be inside metal3
+NOT via3 metal3
+}
+
+Via3.4 {
+@Via3 must be inside metal4
+NOT via3 metal4
+}
+
+Metal4.1 {
+@Minimum width of metal4 = 0.14
+INTERNAL metal4 < 0.14
+}
+
+Metal4.2 {
+@Minimum spacing of metal4 = 0.14
+EXTERNAL metal4 < 0.14
+}
+
+Metal4.3 {
+@Minimum enclosure of metal4 around via3
+ENCLOSURE metal4 via3 < 0.0025
+}
+
+Via4.1 {
+@Minimum width of via4 = 0.14
+INTERNAL via4 < 0.14
+}
+
+Via4.2 {
+@Minimum spacing of via4 = 0.16
+EXTERNAL via4 < 0.14
+}
+
+Via4.3 {
+@Via4 must be inside metal4
+NOT via4 metal4
+}
+
+Via4.4 {
+@Via4 must be inside metal5
+NOT via4 metal5
+}
+
+Metal5.1 {
+@Minimum width of metal5 = 0.14
+INTERNAL metal5 < 0.14
+}
+
+Metal5.2 {
+@Minimum spacing of metal5 = 0.14
+EXTERNAL metal5 < 0.14
+}
+
+Metal5.3 {
+@Minimum enclosure of metal5 around via4
+ENCLOSURE metal5 via4 < 0.0025
+}
+
+Via5.1 {
+@Minimum width of via5 = 0.14
+INTERNAL via5 < 0.14
+}
+
+Via5.2 {
+@Minimum spacing of via5 = 0.16
+EXTERNAL via5 < 0.14
+}
+
+Via5.3 {
+@Via5 must be inside metal5
+NOT via5 metal5
+}
+
+Via5.4 {
+@Via5 must be inside metal6
+NOT via5 metal6
+}
+
+Metal6.1 {
+@Minimum width of metal6 = 0.14
+INTERNAL metal6 < 0.14
+}
+
+Metal6.2 {
+@Minimum spacing of metal6 = 0.14
+EXTERNAL metal6 < 0.14
+}
+
+Metal6.3 {
+@Minimum enclosure of metal6 around via5
+ENCLOSURE metal6 via5 < 0.0025
+}
+
+Via6.1 {
+@Minimum width of via6 = 0.14
+INTERNAL via6 < 0.14
+}
+
+Via6.2 {
+@Minimum spacing of via6 = 0.16
+EXTERNAL via6 < 0.14
+}
+
+Via6.3 {
+@Via6 must be inside metal6
+NOT via6 metal6
+}
+
+Via6.4 {
+@Via6 must be inside metal7
+NOT via6 metal7
+}
+
+Metal7.1 {
+@Minimum width of metal7 = 0.4
+INTERNAL metal7 < 0.4
+}
+
+Metal7.2 {
+@Minimum spacing of metal7 = 0.4
+EXTERNAL metal7 < 0.4
+}
+
+Metal7.3 {
+@Minimum enclosure of metal7 around via6
+ENCLOSURE metal7 via6 < 0.0025
+}
+
+Via7.1 {
+@Minimum width of via7 = 0.4
+INTERNAL via7 < 0.4
+}
+
+Via7.2 {
+@Minimum spacing of via7 = 0.44
+EXTERNAL via7 < 0.44
+}
+
+Via7.3 {
+@Via7 must be inside metal7
+NOT via7 metal7
+}
+
+Via7.4 {
+@Via7 must be inside metal8
+NOT via7 metal8
+}
+
+Metal8.1 {
+@Minimum width of metal8 = 0.4
+INTERNAL metal8 < 0.4
+}
+
+Metal8.2 {
+@Minimum spacing of metal8 = 0.4
+EXTERNAL metal8 < 0.4
+}
+
+Metal8.3 {
+@Minimum enclosure of metal8 around via7
+ENCLOSURE metal8 via7 < 0.0025
+}
+
+Via8.1 {
+@Minimum width of via8 = 0.4
+INTERNAL via8 < 0.4
+}
+
+Via8.2 {
+@Minimum spacing of via8 = 0.44
+EXTERNAL via8 < 0.44
+}
+
+Via8.3 {
+@Via8 must be inside metal8
+NOT via8 metal8
+}
+
+Via8.4 {
+@Via8 must be inside metal9
+NOT via8 metal9
+}
+
+Metal9.1 {
+@Minimum width of metal9 = 0.8
+INTERNAL metal9 < 0.8
+}
+
+Metal9.2 {
+@Minimum spacing of metal9 = 0.8
+EXTERNAL metal9 < 0.8
+}
+
+Metal9.3 {
+@Minimum enclosure of metal9 around via8
+ENCLOSURE metal9 via8 < 0.0025
+}
+
+Via9.1 {
+@Minimum width of via9 = 0.8
+INTERNAL via9 < 0.8
+}
+
+Via9.2 {
+@Minimum spacing of via9 = 0.88
+EXTERNAL via9 < 0.88
+}
+
+Via9.3 {
+@Via9 must be inside metal9
+NOT via9 metal9
+}
+
+Via9.4 {
+@Via9 must be inside metal10
+NOT via9 metal10
+}
+
+Metal10.1 {
+@Minimum width of metal10 = 0.8
+INTERNAL metal10 < 0.8
+}
+
+Metal10.2 {
+@Minimum spacing of metal10 = 0.8
+EXTERNAL metal10 < 0.8
+}
+
+Metal10.3 {
+@Minimum enclosure of metal10 around via9
+ENCLOSURE metal10 via9 < 0.0025
+}
+
+
+
+
+/////Variable Metal widths
+
+L111 = SIZE metal1 BY 0.045 UNDEROVER
+L112 = AND L111 metal1
+L113 = COINCIDENT EDGE metal1 L112
+L114 = LENGTH L113 >= 0.3
+Metal1.5 {
+@Minimum spacing of metal1 wider than 0.09 & longer than 0.3 = 0.09
+EXTERNAL L114 < 0.09
+}
+
+L115 = SIZE metal1 BY 0.135 UNDEROVER
+L116 = AND L115 metal1
+L117 = COINCIDENT EDGE metal1 L116
+L118 = LENGTH L117 >= 0.9
+Metal1.6 {
+@Minimum spacing of metal1 wider than 0.27 & longer than 0.9 = 0.27
+EXTERNAL L118 < 0.27
+}
+
+L119 = SIZE metal1 BY 0.25 UNDEROVER
+L120 = AND L119 metal1
+L121 = COINCIDENT EDGE metal1 L120
+L122 = LENGTH L121 >= 1.8
+Metal1.7 {
+@Minimum spacing of metal1 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L122 < 0.5
+}
+
+L123 = SIZE metal1 BY 0.45 UNDEROVER
+L124 = AND L123 metal1
+L125 = COINCIDENT EDGE metal1 L124
+L126 = LENGTH L125 >= 2.7
+Metal1.8 {
+@Minimum spacing of metal1 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L126 < 0.9
+}
+
+L127 = SIZE metal1 BY 0.75 UNDEROVER
+L128 = AND L127 metal1
+L129 = COINCIDENT EDGE metal1 L128
+L130 = LENGTH L129 >= 4.0
+Metal1.9 {
+@Minimum spacing of metal1 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L130 < 1.5
+}
+
+L211 = SIZE metal2 BY 0.045 UNDEROVER
+L212 = AND L211 metal2
+L213 = COINCIDENT EDGE metal2 L212
+L214 = LENGTH L213 >= 0.3
+Metal2.5 {
+@Minimum spacing of metal2 wider than 0.09 & longer than 0.3 = 0.09
+EXTERNAL L214 < 0.09
+}
+
+L215 = SIZE metal2 BY 0.135 UNDEROVER
+L216 = AND L215 metal2
+L217 = COINCIDENT EDGE metal2 L216
+L218 = LENGTH L217 >= 0.9
+Metal2.6 {
+@Minimum spacing of metal2 wider than 0.27 & longer than 0.9 = 0.27
+EXTERNAL L218 < 0.27
+}
+
+L219 = SIZE metal2 BY 0.25 UNDEROVER
+L220 = AND L219 metal2
+L221 = COINCIDENT EDGE metal2 L220
+L222 = LENGTH L221 >= 1.8
+Metal2.7 {
+@Minimum spacing of metal2 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L222 < 0.5
+}
+
+L223 = SIZE metal2 BY 0.45 UNDEROVER
+L224 = AND L223 metal2
+L225 = COINCIDENT EDGE metal2 L224
+L226 = LENGTH L225 >= 2.7
+Metal2.8 {
+@Minimum spacing of metal2 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L226 < 0.9
+}
+
+L227 = SIZE metal2 BY 0.75 UNDEROVER
+L228 = AND L227 metal2
+L229 = COINCIDENT EDGE metal2 L228
+L230 = LENGTH L229 >= 4.0
+Metal2.9 {
+@Minimum spacing of metal2 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L230 < 1.5
+}
+
+L311 = SIZE metal3 BY 0.045 UNDEROVER
+L312 = AND L311 metal3
+L313 = COINCIDENT EDGE metal3 L312
+L314 = LENGTH L313 >= 0.3
+Metal3.5 {
+@Minimum spacing of metal3 wider than 0.09 & longer than 0.3 = 0.09
+EXTERNAL L314 < 0.09
+}
+
+L315 = SIZE metal3 BY 0.135 UNDEROVER
+L316 = AND L315 metal3
+L317 = COINCIDENT EDGE metal3 L316
+L318 = LENGTH L317 >= 0.9
+Metal3.6 {
+@Minimum spacing of metal3 wider than 0.27 & longer than 0.9 = 0.27
+EXTERNAL L318 < 0.27
+}
+
+L319 = SIZE metal3 BY 0.25 UNDEROVER
+L320 = AND L319 metal3
+L321 = COINCIDENT EDGE metal3 L320
+L322 = LENGTH L321 >= 1.8
+Metal3.7 {
+@Minimum spacing of metal3 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L322 < 0.5
+}
+
+L323 = SIZE metal3 BY 0.45 UNDEROVER
+L324 = AND L323 metal3
+L325 = COINCIDENT EDGE metal3 L324
+L326 = LENGTH L325 >= 2.7
+Metal3.8 {
+@Minimum spacing of metal3 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L326 < 0.9
+}
+
+L327 = SIZE metal3 BY 0.75 UNDEROVER
+L328 = AND L327 metal3
+L329 = COINCIDENT EDGE metal3 L328
+L330 = LENGTH L329 >= 4.0
+Metal3.9 {
+@Minimum spacing of metal3 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L330 < 1.5
+}
+
+L415 = SIZE metal4 BY 0.135 UNDEROVER
+L416 = AND L415 metal4
+L417 = COINCIDENT EDGE metal4 L416
+L418 = LENGTH L417 >= 0.9
+Metal4.5 {
+@Minimum spacing of metal4 wider than 0.27 & longer than 0.9 = 0.27
+EXTERNAL L418 < 0.27
+}
+
+L419 = SIZE metal4 BY 0.25 UNDEROVER
+L420 = AND L419 metal4
+L421 = COINCIDENT EDGE metal4 L420
+L422 = LENGTH L421 >= 1.8
+Metal4.6 {
+@Minimum spacing of metal4 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L422 < 0.5
+}
+
+L423 = SIZE metal4 BY 0.45 UNDEROVER
+L424 = AND L423 metal4
+L425 = COINCIDENT EDGE metal4 L424
+L426 = LENGTH L425 >= 2.7
+Metal4.7 {
+@Minimum spacing of metal4 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L426 < 0.9
+}
+
+L427 = SIZE metal4 BY 0.75 UNDEROVER
+L428 = AND L427 metal4
+L429 = COINCIDENT EDGE metal4 L428
+L430 = LENGTH L429 >= 4.0
+Metal4.8 {
+@Minimum spacing of metal4 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L430 < 1.5
+}
+
+L515 = SIZE metal5 BY 0.135 UNDEROVER
+L516 = AND L515 metal5
+L517 = COINCIDENT EDGE metal5 L516
+L518 = LENGTH L517 >= 0.9
+Metal5.5 {
+@Minimum spacing of metal5 wider than 0.27 & longer than 0.9 = 0.27
+EXTERNAL L518 < 0.27
+}
+
+L519 = SIZE metal5 BY 0.25 UNDEROVER
+L520 = AND L519 metal5
+L521 = COINCIDENT EDGE metal5 L520
+L522 = LENGTH L521 >= 1.8
+Metal5.6 {
+@Minimum spacing of metal5 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L522 < 0.5
+}
+
+L523 = SIZE metal5 BY 0.45 UNDEROVER
+L524 = AND L523 metal5
+L525 = COINCIDENT EDGE metal5 L524
+L526 = LENGTH L525 >= 2.7
+Metal5.7 {
+@Minimum spacing of metal5 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L526 < 0.9
+}
+
+L527 = SIZE metal5 BY 0.75 UNDEROVER
+L528 = AND L527 metal5
+L529 = COINCIDENT EDGE metal5 L528
+L530 = LENGTH L529 >= 4.0
+Metal5.8 {
+@Minimum spacing of metal5 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L530 < 1.5
+}
+
+L615 = SIZE metal6 BY 0.135 UNDEROVER
+L616 = AND L615 metal6
+L617 = COINCIDENT EDGE metal6 L616
+L618 = LENGTH L617 >= 0.9
+Metal6.5 {
+@Minimum spacing of metal6 wider than 0.27 & longer than 0.9 = 0.27
+EXTERNAL L618 < 0.27
+}
+
+L619 = SIZE metal6 BY 0.25 UNDEROVER
+L620 = AND L619 metal6
+L621 = COINCIDENT EDGE metal6 L620
+L622 = LENGTH L621 >= 1.8
+Metal6.6 {
+@Minimum spacing of metal6 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L622 < 0.5
+}
+
+L623 = SIZE metal6 BY 0.45 UNDEROVER
+L624 = AND L623 metal6
+L625 = COINCIDENT EDGE metal6 L624
+L626 = LENGTH L625 >= 2.7
+Metal6.7 {
+@Minimum spacing of metal6 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L626 < 0.9
+}
+
+L627 = SIZE metal6 BY 0.75 UNDEROVER
+L628 = AND L627 metal6
+L629 = COINCIDENT EDGE metal6 L628
+L630 = LENGTH L629 >= 4.0
+Metal6.8 {
+@Minimum spacing of metal6 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L630 < 1.5
+}
+
+L719 = SIZE metal7 BY 0.25 UNDEROVER
+L720 = AND L719 metal7
+L721 = COINCIDENT EDGE metal7 L720
+L722 = LENGTH L721 >= 1.8
+Metal7.5 {
+@Minimum spacing of metal7 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L722 < 0.5
+}
+
+L723 = SIZE metal7 BY 0.45 UNDEROVER
+L724 = AND L723 metal7
+L725 = COINCIDENT EDGE metal7 L724
+L726 = LENGTH L725 >= 2.7
+Metal7.6 {
+@Minimum spacing of metal7 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L726 < 0.9
+}
+
+L727 = SIZE metal7 BY 0.75 UNDEROVER
+L728 = AND L727 metal7
+L729 = COINCIDENT EDGE metal7 L728
+L730 = LENGTH L729 >= 4.0
+Metal7.7 {
+@Minimum spacing of metal7 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L730 < 1.5
+}
+
+
+L819 = SIZE metal8 BY 0.25 UNDEROVER
+L820 = AND L819 metal8
+L821 = COINCIDENT EDGE metal8 L820
+L822 = LENGTH L821 >= 1.8
+Metal8.5 {
+@Minimum spacing of metal8 wider than 0.5 & longer than 1.8 = 0.5
+EXTERNAL L822 < 0.5
+}
+
+L823 = SIZE metal8 BY 0.45 UNDEROVER
+L824 = AND L823 metal8
+L825 = COINCIDENT EDGE metal8 L824
+L826 = LENGTH L825 >= 2.7
+Metal8.6 {
+@Minimum spacing of metal8 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L826 < 0.9
+}
+
+L827 = SIZE metal8 BY 0.75 UNDEROVER
+L828 = AND L827 metal8
+L829 = COINCIDENT EDGE metal8 L828
+L830 = LENGTH L829 >= 4.0
+Metal8.7 {
+@Minimum spacing of metal8 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L830 < 1.5
+}
+
+L923 = SIZE metal9 BY 0.45 UNDEROVER
+L924 = AND L923 metal9
+L925 = COINCIDENT EDGE metal9 L924
+L926 = LENGTH L925 >= 2.7
+Metal9.5 {
+@Minimum spacing of metal9 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L926 < 0.9
+}
+
+L927 = SIZE metal9 BY 0.75 UNDEROVER
+L928 = AND L927 metal9
+L929 = COINCIDENT EDGE metal9 L928
+L930 = LENGTH L929 >= 4.0
+Metal9.6 {
+@Minimum spacing of metal9 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L930 < 1.5
+}
+
+L1023 = SIZE metal10 BY 0.45 UNDEROVER
+L1024 = AND L1023 metal10
+L1025 = COINCIDENT EDGE metal10 L1024
+L1026 = LENGTH L1025 >= 2.7
+Metal10.5 {
+@Minimum spacing of metal10 wider than 0.9 & longer than 2.7 = 0.9
+EXTERNAL L1026 < 0.9
+}
+
+L1027 = SIZE metal10 BY 0.75 UNDEROVER
+L1028 = AND L1027 metal10
+L1029 = COINCIDENT EDGE metal10 L1028
+L1030 = LENGTH L1029 >= 4.0
+Metal10.6 {
+@Minimum spacing of metal10 wider than 1.5 & longer than 4.0 = 1.5
+EXTERNAL L1030 < 1.5
+}
+
+Grid.1 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID active 5 5
+}
+
+Grid.2 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID implant 5 5
+}
+
+Grid.3 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID well 5 5
+}
+
+Grid.4 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID contact 5 5
+}
+
+Grid.5 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID poly 5 5
+}
+
+Grid.6 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal1 5 5
+}
+
+Grid.7 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via1 5 5
+}
+
+Grid.8 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal2 5 5
+}
+
+Grid.9 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via2 5 5
+}
+
+Grid.10 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal3 5 5
+}
+
+Grid.11 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via3 5 5
+}
+
+Grid.12 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal4 5 5
+}
+
+Grid.13 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via4 5 5
+}
+
+Grid.14 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal5 5 5
+}
+
+Grid.15 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via5 5 5
+}
+
+Grid.16 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal6 5 5
+}
+
+Grid.17 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via6 5 5
+}
+
+Grid.18 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal7 5 5
+}
+
+Grid.19 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via7 5 5
+}
+
+Grid.20 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal8 5 5
+}
+
+Grid.21 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via8 5 5
+}
+
+Grid.22 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal9 5 5
+}
+
+Grid.23 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID via9 5 5
+}
+
+Grid.24 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID metal10 5 5
+}
+
+Grid.25 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID vtg 5 5
+}
+
+Grid.26 {
+@All shapes must be on a 2.5 nm grid
+OFFGRID vth 5 5
+}
+
+CONNECT poly gate
+CONNECT metal1 poly BY contact
+CONNECT metal1 diode
+
+//If diodes are present, !AREA(diode) is 0.
+Antenna.poly{
+@Maximum allowed field poly area to antenna area is 100:1. Connect diode to relax constraint.
+NET AREA RATIO poly gate diode > 100
+	[(AREA(poly) * !AREA(diode))  / AREA(gate)]
+}
+ac0 =NET AREA RATIO poly gate >=0 ACCUMULATE
+
+// First level metal antenna check
+Antenna.metal1 { 
+@Maximum allowed (poly + metal 1) antenna area to gate area is 300:1. Connect diode to relax constraint.
+NET AREA RATIO metal1 poly gate diode > 300
+	[((AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac1=NET AREA RATIO metal1 gate >=0 ACCUMULATE ac0
+
+//Second level metal antenna check
+CONNECT metal2 metal1 BY via1
+Antenna.metal2 {
+@[Area(poly)+Area(Metal 1)]:Area(Gate) should be < 300:1 to prevent plasma induced damage.
+NET AREA RATIO metal2 metal1 poly gate diode > 300
+	[((AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+
+}
+ac2=NET AREA RATIO metal2 gate >=0 ACCUMULATE ac1
+
+//Third level metal antenna check
+CONNECT metal3 metal2 BY via2
+Antenna.metal3 {
+@[Area(poly)+Area(Metal 1)+Area(Metal 2)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage.
+NET AREA RATIO metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+
+}
+ac3=NET AREA RATIO metal3 gate >=0 ACCUMULATE ac2
+
+//Fourth level metal antenna check
+CONNECT metal4 metal3 BY via3
+Antenna.metal4 {
+@[Area(poly)+Area(Metal 1)+Area(Metal 2)+Area(Metal 3)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac4=NET AREA RATIO metal4 gate >=0 ACCUMULATE ac3
+
+//Fifth level metal antenna check
+CONNECT metal5 metal4 BY via4
+Antenna.metal5 {
+@[Area(poly+M1+M2+M3+M4):Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac5=NET AREA RATIO metal5 gate >=0 ACCUMULATE ac4
+
+//Sixth level metal antenna check
+CONNECT metal6 metal5 BY via5
+Antenna.metal6 {
+@[Area(poly+M1+M2+M3+M4+M5)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac6=NET AREA RATIO metal6 gate >=0 ACCUMULATE ac5
+
+//Seventh level metal antenna check
+CONNECT metal7 metal6 BY via6
+Antenna.metal7 {
+@[Area(poly+M1+M2+M3+M4+M5+M6)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode> 300 
+[((AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac7=NET AREA RATIO metal7 gate >=0 ACCUMULATE ac6
+
+//Eighth level metal antenna check
+CONNECT metal8 metal7 BY via7
+Antenna.metal8 {
+@[Area(poly+M1+M2+M3+M4+M5+M6+M7)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal8 metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal7)+AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac8=NET AREA RATIO metal8 gate >=0 ACCUMULATE ac7
+
+//Ninth level metal antenna check
+CONNECT metal9 metal8 BY via8
+Antenna.metal9 {
+@[Area(poly+M1+M2+M3+M4+M5+M6+M7+M8)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal9 metal8 metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal8)+AREA(metal7)+AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac9=NET AREA RATIO metal9 gate >=0 ACCUMULATE ac8
+
+//Tenth level metal antenna check
+CONNECT metal10 metal9 BY via9
+Antenna.metal10 {
+@[Area(poly+M1+M2+M3+M4+M5+M6+M7+M8+M9)]:Area(Gate) should be < 300:1 to prevent plasma induced gate oxide damage
+NET AREA RATIO metal10 metal9 metal8 metal7 metal6 metal5 metal4 metal3 metal2 metal1 poly gate diode > 300
+[((AREA(metal9)+AREA(metal8)+AREA(metal7)+AREA(metal6)+AREA(metal5)+AREA(metal4)+ AREA(metal3)+ AREA(metal2)+ AREA(metal1)+ AREA(poly)) * !AREA(diode))  / AREA(gate)]
+}
+ac10=NET AREA RATIO metal10 gate >=0 ACCUMULATE ac9

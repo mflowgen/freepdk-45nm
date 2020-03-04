@@ -1,0 +1,116 @@
+metal1		NET		49		0
+metal1		SPNET		49		0
+metal1		PIN		49		0
+metal1		FILL		49		0
+metal1		VIA		49		0
+metal1		VIAFILL		49		0
+NAME		metal1/PIN	49 		0
+NAME		metal1/SPNET	49 		0
+
+metal2		NET		51		0
+metal2		SPNET		51		0
+metal2		PIN		51		0
+metal2		FILL		51		0
+metal2		VIA		51		0
+metal2		VIAFILL		51		0
+NAME		metal2/PIN	51 		0
+NAME		metal2/SPNET	51 		0
+
+metal3		NET		62		0
+metal3		SPNET		62		0
+metal3		PIN		62		0
+metal3		FILL		62		0
+metal3		VIA		62		0
+metal3		VIAFILL		62		0
+NAME		metal3/PIN	62 		0
+NAME		metal3/SPNET	62 		0
+
+metal4		NET		31		0
+metal4		SPNET		31		0
+metal4		PIN		31 		0
+metal4		FILL		31 		0
+metal4		VIA		31		0
+metal4		VIAFILL		31		0
+NAME		metal4/PIN	31 		0
+NAME		metal4/SPNET	31 		0
+
+metal5		NET		33		0
+metal5		SPNET		33		0
+metal5		PIN		33		0
+metal5		FILL		33		0
+metal5		VIA		33		0
+metal5		VIAFILL		33		0
+NAME		metal5/PIN	33 		0
+NAME		metal5/SPNET	33 		0
+
+metal6		NET		37		0
+metal6		SPNET		37		0
+metal6		PIN		37		0
+metal6		FILL		37		0
+metal6		VIA		37		0
+metal6		VIAFILL		37		0
+NAME		metal6/PIN	37 		0
+NAME		metal6/SPNET	37 		0
+
+metal7		NET		39		0
+metal7		SPNET		39		0
+metal7		PIN		39 		0
+metal7		FILL		39 		0
+metal7		VIA		39		0
+metal7		VIAFILL		39		0
+NAME		metal4/PIN	39 		0
+NAME		metal4/SPNET	39 		0
+
+metal8		NET		41		0
+metal8		SPNET		41		0
+metal8		PIN		41		0
+metal8		FILL		41		0
+metal8		VIA		41		0
+metal8		VIAFILL		41		0
+NAME		metal5/PIN	41 		0
+NAME		metal5/SPNET	41 		0
+
+metal9		NET		43		0
+metal9		SPNET		43		0
+metal9		PIN		43		0
+metal9		FILL		43		0
+metal9		VIA		43		0
+metal9		VIAFILL		43		0
+NAME		metal6/PIN	43 		0
+NAME		metal6/SPNET	43 		0
+
+metal10		NET		45		0
+metal10		SPNET		45		0
+metal10		PIN		45		0
+metal10		FILL		45		0
+metal10		VIA		45		0
+metal10		VIAFILL		45		0
+NAME		metal6/PIN	45 		0
+NAME		metal6/SPNET	45 		0
+
+via 		VIA		50		0
+via 		VIAFILL		50		0
+
+via2 		VIA		61		0
+via2 		VIAFILL		61		0
+
+via3 		VIA		30		0
+via3 		VIAFILL		30		0
+
+via4 		VIA		32		0
+via4 		VIAFILL		32		0
+
+via5            VIA             36              0
+via5 		VIAFILL		36		0
+
+via6		VIA		38		0
+via6		VIAFILL		38		0
+
+via7 		VIA		40		0
+via7 		VIAFILL		40		0
+
+via8 		VIA		42		0
+via8 		VIAFILL		42 		0
+
+via9 		VIA		44		0
+via9 		VIAFILL		44		0

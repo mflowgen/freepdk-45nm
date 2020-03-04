@@ -1,0 +1,184 @@
+TITLE   "LVS Rule File for FreePDK45"
+
+LVS POWER NAME VDD
+LVS GROUND NAME VSS GROUND
+LVS REDUCE PARALLEL MOS yes
+LVS REDUCE SERIES MOS yes
+LVS REDUCE SEMI SERIES MOS yes
+LVS FILTER UNUSED MOS no
+LVS RECOGNIZE GATES all
+LVS COMPONENT TYPE PROPERTY element
+LVS COMPONENT SUBTYPE PROPERTY model
+LVS IGNORE PORTS no
+
+LVS REPORT mask.lvs.rep
+LVS REPORT OPTION N
+LVS REPORT MAXIMUM 50
+MASK RESULTS DATABASE maskdb
+
+precision 2000
+resolution 250
+
+TEXT LAYER metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10
+PORT LAYER TEXT  metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10
+
+layer active 1
+layer pwell 2
+layer nwell 3
+layer nimplant 4
+layer pimplant 5
+layer vtg 6
+layer vth 7
+layer thkox 8
+layer poly 9
+layer contact 10
+layer metal1 11
+layer via1 12
+layer metal2 13
+layer via2 14
+layer metal3 15
+layer via3 16
+layer metal4 17
+layer via4 18
+layer metal5 19
+layer via5 20
+layer metal6 21
+layer via6 22
+layer metal7 23
+layer via7 24
+layer metal8 25
+layer via8 26
+layer metal9 27
+layer via9 28
+layer metal10 29
+layer nodrc 80
+layer marker 238
+
+connect metal1  metal2 by via1
+connect metal2  metal3 by via2
+connect metal3  metal4 by via3
+connect metal4  metal5 by via4
+connect metal5  metal6 by via5
+connect metal6  metal7 by via6
+connect metal7  metal8 by via7
+connect metal8  metal9 by via8
+connect metal9  metal10 by via9
+
+pdif = active and pimplant 
+ndif = active and nimplant
+
+ngate1 = poly and ndif
+pgate1 = poly and pdif
+
+ngate_dev1 = ngate1 not interact vth
+ngate_dev2 = ngate_dev1 not interact vtg 
+ngate = ngate_dev2 not interact thkox
+
+pgate_dev1 = pgate1 not interact vth
+pgate_dev2 = pgate_dev1 not interact vtg 
+pgate = pgate_dev2 not interact thkox
+
+hvtngate_dev1 = ngate1 not interact vtg
+hvtngate_dev2 = hvtngate_dev1 not interact thkox
+hvtngate = hvtngate_dev2 interact vth
+
+hvtpgate_dev1 = pgate1 not interact vtg
+hvtpgate_dev2 = hvtpgate_dev1 not interact thkox
+hvtpgate = hvtpgate_dev2 interact vth
+
+vtgngate_dev1 = ngate1 not interact vth
+vtgngate_dev2 = vtgngate_dev1 not interact thkox
+vtgngate = vtgngate_dev2 interact vtg
+
+vtgpgate_dev1 = pgate1 not interact vth
+vtgpgate_dev2 = vtgpgate_dev1 not interact thkox
+vtgpgate = vtgpgate_dev2 interact vtg
+
+thkoxngate_dev1 = ngate1 not interact vth
+thkoxngate_dev2 = ngate_dev1 not interact vtg
+thkoxngate = thkoxngate_dev2 interact thkox
+
+thkoxpgate_dev1 = pgate1 not interact vth
+thkoxpgate_dev2 = pgate_dev1 not interact vtg
+thkoxpgate = thkoxpgate_dev2 interact thkox
+
+nsrcdrn = ndif not ngate1
+psrcdrn = pdif not pgate1
+
+pcont = psrcdrn and pwell
+
+ntapcont = active not interact pimplant
+ptapcont = active not interact nimplant 
+
+bulk = extent
+nsub = (bulk not pwell) and nwell
+ncont = nsrcdrn and nsub
+
+connect metal1 poly psrcdrn nsrcdrn by contact mask
+connect psrcdrn pwell by pcont mask
+connect nsrcdrn nsub by ncont mask
+
+ncont1= ntapcont and nsub
+pcont1= ptapcont and pwell
+connect metal1 ncont1 by contact mask
+connect metal1 pcont1 by contact mask
+connect ncont1 nsub
+connect pcont1 pwell
+
+device mp (PMOS_VTL) pgate poly (G) psrcdrn (S) psrcdrn (D) nsub  CMACRO FET_PROPERTIES pgate nsub
+device mn (NMOS_VTL) ngate poly (G) nsrcdrn (S) nsrcdrn (D) pwell  CMACRO FET_PROPERTIES ngate pwell
+
+device mp (PMOS_VTH) hvtpgate poly (G) psrcdrn (S) psrcdrn (D) nsub  CMACRO FET_PROPERTIES hvtpgate nsub
+device mn (NMOS_VTH) hvtngate poly (G) nsrcdrn (S) nsrcdrn (D) pwell  CMACRO FET_PROPERTIES hvtngate pwell
+
+device mp (PMOS_VTG) vtgpgate poly (G) psrcdrn (S) psrcdrn (D) nsub  CMACRO FET_PROPERTIES  vtgpgate nsub
+device mn (NMOS_VTG) vtgngate poly (G) nsrcdrn (S) nsrcdrn (D) pwell  CMACRO FET_PROPERTIES vtgngate pwell 
+
+device mp (PMOS_THKOX) thkoxpgate poly (G) psrcdrn (S) psrcdrn (D) nsub  CMACRO FET_PROPERTIES thkoxpgate nsub 
+device mn (NMOS_THKOX) thkoxngate poly (G) nsrcdrn (S) nsrcdrn (D) pwell  CMACRO FET_PROPERTIES thkoxngate pwell
+
+VARIABLE trace_delta 4e-9
+
+DMACRO FET_TRACE device_type device_name {
+TRACE PROPERTY device_type(device_name) l l trace_delta ABSOLUTE
+TRACE PROPERTY device_type(device_name) w w trace_delta ABSOLUTE
+
+}
+
+CMACRO FET_TRACE MN NMOS_VTL 
+CMACRO FET_TRACE MP PMOS_VTL
+
+CMACRO FET_TRACE MN NMOS_VTH
+CMACRO FET_TRACE MP PMOS_VTH
+
+CMACRO FET_TRACE MN NMOS_VTG
+CMACRO FET_TRACE MP PMOS_VTG
+
+CMACRO FET_TRACE MN NMOS_THKOX
+CMACRO FET_TRACE MP PMOS_THKOX
+
+DMACRO FET_PROPERTIES seed well{
+[
+PROPERTY  W, L, AS, AD, PS, PD
+
+      AS = area(S)
+      AD = area(D)
+      PS = perimeter(S)
+      PD = perimeter(D)
+      if ( AS == 0 ) {
+         AD = area(D) / 2
+         AS = AD
+         PD = perimeter(D) / 2
+         PS = PD
+         }
+      if ( AD == 0 ) {
+         AS = area(S) / 2
+         AD = AS
+         PS = perimeter(S) / 2
+         PD = PS
+         }
+     W = (perim_co(seed,S) + perim_co(seed,D) ) * 0.5
+     L = (perim(seed) - perim_co(seed,S) - perim_in(seed,S) - perim_co(seed,D) - perim_in(seed,D) ) * 0.5
+   
+]
+}

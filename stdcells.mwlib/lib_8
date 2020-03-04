@@ -1,0 +1,2132 @@
+defineGateSize "AND2_X1" "A1" 0.02625
+defineHierAntennaProp "AND2_X1" "A1" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND2_X1" "A2" 0.02625
+defineHierAntennaProp "AND2_X1" "A2" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "AND2_X1" "ZN" '(0.109725)
+defineHierAntennaProp "AND2_X1" "ZN" '(
+("metal1" 0 0.0954 0 0 0.299 0 0)
+)
+defineGateSize "AND2_X2" "A1" 0.05225
+defineHierAntennaProp "AND2_X2" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND2_X2" "A2" 0.05225
+defineHierAntennaProp "AND2_X2" "A2" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "AND2_X2" "ZN" '(0.1463)
+defineHierAntennaProp "AND2_X2" "ZN" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "AND2_X4" "A1" 0.1045
+defineHierAntennaProp "AND2_X4" "A1" '(
+("metal1" 0.1045 0.0312 0 0 0.0962 0 0)
+)
+defineGateSize "AND2_X4" "A2" 0.1045
+defineHierAntennaProp "AND2_X4" "A2" '(
+("metal1" 0.1045 0.101125 0 0 0.3315 0 0)
+)
+defineDiodeProtection "AND2_X4" "ZN" '(0.2926)
+defineHierAntennaProp "AND2_X4" "ZN" '(
+("metal1" 0 0.19045 0 0 0.6682 0 0)
+)
+defineGateSize "AND3_X1" "A1" 0.02625
+defineHierAntennaProp "AND3_X1" "A1" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND3_X1" "A2" 0.02625
+defineHierAntennaProp "AND3_X1" "A2" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND3_X1" "A3" 0.02625
+defineHierAntennaProp "AND3_X1" "A3" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "AND3_X1" "ZN" '(0.109725)
+defineHierAntennaProp "AND3_X1" "ZN" '(
+("metal1" 0 0.088 0 0 0.3146 0 0)
+)
+defineGateSize "AND3_X2" "A1" 0.05225
+defineHierAntennaProp "AND3_X2" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND3_X2" "A2" 0.05225
+defineHierAntennaProp "AND3_X2" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND3_X2" "A3" 0.05225
+defineHierAntennaProp "AND3_X2" "A3" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "AND3_X2" "ZN" '(0.1463)
+defineHierAntennaProp "AND3_X2" "ZN" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "AND3_X4" "A1" 0.1045
+defineHierAntennaProp "AND3_X4" "A1" '(
+("metal1" 0.1045 0.019575 0 0 0.0728 0 0)
+)
+defineGateSize "AND3_X4" "A2" 0.1045
+defineHierAntennaProp "AND3_X4" "A2" '(
+("metal1" 0.1045 0.0819 0 0 0.2756 0 0)
+)
+defineGateSize "AND3_X4" "A3" 0.1045
+defineHierAntennaProp "AND3_X4" "A3" '(
+("metal1" 0.1045 0.1155 0 0 0.4238 0 0)
+)
+defineDiodeProtection "AND3_X4" "ZN" '(0.2926)
+defineHierAntennaProp "AND3_X4" "ZN" '(
+("metal1" 0 0.196 0 0 0.65 0 0)
+)
+defineGateSize "AND4_X1" "A1" 0.02625
+defineHierAntennaProp "AND4_X1" "A1" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND4_X1" "A2" 0.02625
+defineHierAntennaProp "AND4_X1" "A2" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND4_X1" "A3" 0.02625
+defineHierAntennaProp "AND4_X1" "A3" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND4_X1" "A4" 0.02625
+defineHierAntennaProp "AND4_X1" "A4" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "AND4_X1" "ZN" '(0.109725)
+defineHierAntennaProp "AND4_X1" "ZN" '(
+("metal1" 0 0.099 0 0 0.3094 0 0)
+)
+defineGateSize "AND4_X2" "A1" 0.05225
+defineHierAntennaProp "AND4_X2" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND4_X2" "A2" 0.05225
+defineHierAntennaProp "AND4_X2" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND4_X2" "A3" 0.05225
+defineHierAntennaProp "AND4_X2" "A3" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AND4_X2" "A4" 0.05225
+defineHierAntennaProp "AND4_X2" "A4" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "AND4_X2" "ZN" '(0.1463)
+defineHierAntennaProp "AND4_X2" "ZN" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "AND4_X4" "A1" 0.1045
+defineHierAntennaProp "AND4_X4" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AND4_X4" "A2" 0.1045
+defineHierAntennaProp "AND4_X4" "A2" '(
+("metal1" 0.1045 0.079125 0 0 0.2626 0 0)
+)
+defineGateSize "AND4_X4" "A3" 0.1045
+defineHierAntennaProp "AND4_X4" "A3" '(
+("metal1" 0.1045 0.121975 0 0 0.403 0 0)
+)
+defineGateSize "AND4_X4" "A4" 0.1045
+defineHierAntennaProp "AND4_X4" "A4" '(
+("metal1" 0.1045 0.164325 0 0 0.5993 0 0)
+)
+defineDiodeProtection "AND4_X4" "ZN" '(0.2926)
+defineHierAntennaProp "AND4_X4" "ZN" '(
+("metal1" 0 0.1505 0 0 0.481 0 0)
+)
+defineGateSize "ANTENNA_X1" "A" 0.0162
+defineHierAntennaProp "ANTENNA_X1" "A" '(
+("metal1" 0.0162 0.0231 0 0 0.104 0 0)
+)
+defineGateSize "AOI211_X1" "A" 0.05225
+defineHierAntennaProp "AOI211_X1" "A" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI211_X1" "B" 0.05225
+defineHierAntennaProp "AOI211_X1" "B" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI211_X1" "C1" 0.05225
+defineHierAntennaProp "AOI211_X1" "C1" '(
+("metal1" 0.05225 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "AOI211_X1" "C2" 0.05225
+defineHierAntennaProp "AOI211_X1" "C2" '(
+("metal1" 0.05225 0.02625 0 0 0.0845 0 0)
+)
+defineDiodeProtection "AOI211_X1" "ZN" '(0.189875)
+defineHierAntennaProp "AOI211_X1" "ZN" '(
+("metal1" 0 0.124175 0 0 0.468 0 0)
+)
+defineGateSize "AOI211_X2" "A" 0.1045
+defineHierAntennaProp "AOI211_X2" "A" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI211_X2" "B" 0.1045
+defineHierAntennaProp "AOI211_X2" "B" '(
+("metal1" 0.1045 0.0951 0 0 0.3224 0 0)
+)
+defineGateSize "AOI211_X2" "C1" 0.1045
+defineHierAntennaProp "AOI211_X2" "C1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI211_X2" "C2" 0.1045
+defineHierAntennaProp "AOI211_X2" "C2" '(
+("metal1" 0.1045 0.08205 0 0 0.2925 0 0)
+)
+defineDiodeProtection "AOI211_X2" "ZN" '(0.3507)
+defineHierAntennaProp "AOI211_X2" "ZN" '(
+("metal1" 0 0.2202 0 0 0.7709 0 0)
+)
+defineGateSize "AOI211_X4" "A" 0.05225
+defineHierAntennaProp "AOI211_X4" "A" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "AOI211_X4" "B" 0.05225
+defineHierAntennaProp "AOI211_X4" "B" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI211_X4" "C1" 0.05225
+defineHierAntennaProp "AOI211_X4" "C1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI211_X4" "C2" 0.05225
+defineHierAntennaProp "AOI211_X4" "C2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "AOI211_X4" "ZN" '(0.2926)
+defineHierAntennaProp "AOI211_X4" "ZN" '(
+("metal1" 0 0.1862 0 0 0.6123 0 0)
+)
+defineGateSize "AOI21_X1" "A" 0.05225
+defineHierAntennaProp "AOI21_X1" "A" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI21_X1" "B1" 0.05225
+defineHierAntennaProp "AOI21_X1" "B1" '(
+("metal1" 0.05225 0.01925 0 0 0.0741 0 0)
+)
+defineGateSize "AOI21_X1" "B2" 0.05225
+defineHierAntennaProp "AOI21_X1" "B2" '(
+("metal1" 0.05225 0.0245 0 0 0.0819 0 0)
+)
+defineDiodeProtection "AOI21_X1" "ZN" '(0.1463)
+defineHierAntennaProp "AOI21_X1" "ZN" '(
+("metal1" 0 0.083925 0 0 0.3185 0 0)
+)
+defineGateSize "AOI21_X2" "A" 0.1045
+defineHierAntennaProp "AOI21_X2" "A" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI21_X2" "B1" 0.1045
+defineHierAntennaProp "AOI21_X2" "B1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI21_X2" "B2" 0.1045
+defineHierAntennaProp "AOI21_X2" "B2" '(
+("metal1" 0.1045 0.0833 0 0 0.3042 0 0)
+)
+defineDiodeProtection "AOI21_X2" "ZN" '(0.2926)
+defineHierAntennaProp "AOI21_X2" "ZN" '(
+("metal1" 0 0.159875 0 0 0.6006 0 0)
+)
+defineGateSize "AOI21_X4" "A" 0.209
+defineHierAntennaProp "AOI21_X4" "A" '(
+("metal1" 0.209 0.023625 0 0 0.0806 0 0)
+)
+defineGateSize "AOI21_X4" "B1" 0.209
+defineHierAntennaProp "AOI21_X4" "B1" '(
+("metal1" 0.209 0.09775 0 0 0.3185 0 0)
+)
+defineGateSize "AOI21_X4" "B2" 0.209
+defineHierAntennaProp "AOI21_X4" "B2" '(
+("metal1" 0.209 0.139675 0 0 0.5044 0 0)
+)
+defineDiodeProtection "AOI21_X4" "ZN" '(0.5852)
+defineHierAntennaProp "AOI21_X4" "ZN" '(
+("metal1" 0 0.35525 0 0 1.3377 0 0)
+)
+defineGateSize "AOI221_X1" "A" 0.05225
+defineHierAntennaProp "AOI221_X1" "A" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI221_X1" "B1" 0.05225
+defineHierAntennaProp "AOI221_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI221_X1" "B2" 0.05225
+defineHierAntennaProp "AOI221_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI221_X1" "C1" 0.05225
+defineHierAntennaProp "AOI221_X1" "C1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI221_X1" "C2" 0.05225
+defineHierAntennaProp "AOI221_X1" "C2" '(
+("metal1" 0.05225 0.01925 0 0 0.0741 0 0)
+)
+defineDiodeProtection "AOI221_X1" "ZN" '(0.189875)
+defineHierAntennaProp "AOI221_X1" "ZN" '(
+("metal1" 0 0.13145 0 0 0.468 0 0)
+)
+defineGateSize "AOI221_X2" "A" 0.1045
+defineHierAntennaProp "AOI221_X2" "A" '(
+("metal1" 0.1045 0.11795 0 0 0.4251 0 0)
+)
+defineGateSize "AOI221_X2" "B1" 0.1045
+defineHierAntennaProp "AOI221_X2" "B1" '(
+("metal1" 0.1045 0.0805 0 0 0.2743 0 0)
+)
+defineGateSize "AOI221_X2" "B2" 0.1045
+defineHierAntennaProp "AOI221_X2" "B2" '(
+("metal1" 0.1045 0.0196 0 0 0.0728 0 0)
+)
+defineGateSize "AOI221_X2" "C1" 0.1045
+defineHierAntennaProp "AOI221_X2" "C1" '(
+("metal1" 0.1045 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "AOI221_X2" "C2" 0.1045
+defineHierAntennaProp "AOI221_X2" "C2" '(
+("metal1" 0.1045 0.08085 0 0 0.2912 0 0)
+)
+defineDiodeProtection "AOI221_X2" "ZN" '(0.3507)
+defineHierAntennaProp "AOI221_X2" "ZN" '(
+("metal1" 0 0.1938 0 0 0.715 0 0)
+)
+defineGateSize "AOI221_X4" "A" 0.05225
+defineHierAntennaProp "AOI221_X4" "A" '(
+("metal1" 0.05225 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "AOI221_X4" "B1" 0.05225
+defineHierAntennaProp "AOI221_X4" "B1" '(
+("metal1" 0.05225 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "AOI221_X4" "B2" 0.05225
+defineHierAntennaProp "AOI221_X4" "B2" '(
+("metal1" 0.05225 0.02975 0 0 0.0897 0 0)
+)
+defineGateSize "AOI221_X4" "C1" 0.05225
+defineHierAntennaProp "AOI221_X4" "C1" '(
+("metal1" 0.05225 0.03675 0 0 0.1001 0 0)
+)
+defineGateSize "AOI221_X4" "C2" 0.05225
+defineHierAntennaProp "AOI221_X4" "C2" '(
+("metal1" 0.05225 0.01575 0 0 0.0689 0 0)
+)
+defineDiodeProtection "AOI221_X4" "ZN" '(0.2926)
+defineHierAntennaProp "AOI221_X4" "ZN" '(
+("metal1" 0 0.2049 0 0 0.6513 0 0)
+)
+defineGateSize "AOI222_X1" "A1" 0.05225
+defineHierAntennaProp "AOI222_X1" "A1" '(
+("metal1" 0.05225 0.025375 0 0 0.0832 0 0)
+)
+defineGateSize "AOI222_X1" "A2" 0.05225
+defineHierAntennaProp "AOI222_X1" "A2" '(
+("metal1" 0.05225 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "AOI222_X1" "B1" 0.05225
+defineHierAntennaProp "AOI222_X1" "B1" '(
+("metal1" 0.05225 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "AOI222_X1" "B2" 0.05225
+defineHierAntennaProp "AOI222_X1" "B2" '(
+("metal1" 0.05225 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "AOI222_X1" "C1" 0.05225
+defineHierAntennaProp "AOI222_X1" "C1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI222_X1" "C2" 0.05225
+defineHierAntennaProp "AOI222_X1" "C2" '(
+("metal1" 0.05225 0.027125 0 0 0.0858 0 0)
+)
+defineDiodeProtection "AOI222_X1" "ZN" '(0.252125)
+defineHierAntennaProp "AOI222_X1" "ZN" '(
+("metal1" 0 0.15955 0 0 0.546 0 0)
+)
+defineGateSize "AOI222_X2" "A1" 0.1045
+defineHierAntennaProp "AOI222_X2" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI222_X2" "A2" 0.1045
+defineHierAntennaProp "AOI222_X2" "A2" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI222_X2" "B1" 0.1045
+defineHierAntennaProp "AOI222_X2" "B1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI222_X2" "B2" 0.1045
+defineHierAntennaProp "AOI222_X2" "B2" '(
+("metal1" 0.1045 0.08525 0 0 0.2717 0 0)
+)
+defineGateSize "AOI222_X2" "C1" 0.1045
+defineHierAntennaProp "AOI222_X2" "C1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI222_X2" "C2" 0.1045
+defineHierAntennaProp "AOI222_X2" "C2" '(
+("metal1" 0.1045 0.0872 0 0 0.2964 0 0)
+)
+defineDiodeProtection "AOI222_X2" "ZN" '(0.3507)
+defineHierAntennaProp "AOI222_X2" "ZN" '(
+("metal1" 0 0.26185 0 0 0.9256 0 0)
+)
+defineGateSize "AOI222_X4" "A1" 0.05225
+defineHierAntennaProp "AOI222_X4" "A1" '(
+("metal1" 0.05225 0.030625 0 0 0.091 0 0)
+)
+defineGateSize "AOI222_X4" "A2" 0.05225
+defineHierAntennaProp "AOI222_X4" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI222_X4" "B1" 0.05225
+defineHierAntennaProp "AOI222_X4" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI222_X4" "B2" 0.05225
+defineHierAntennaProp "AOI222_X4" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI222_X4" "C1" 0.05225
+defineHierAntennaProp "AOI222_X4" "C1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI222_X4" "C2" 0.05225
+defineHierAntennaProp "AOI222_X4" "C2" '(
+("metal1" 0.05225 0.023625 0 0 0.0806 0 0)
+)
+defineDiodeProtection "AOI222_X4" "ZN" '(0.2926)
+defineHierAntennaProp "AOI222_X4" "ZN" '(
+("metal1" 0 0.2037 0 0 0.6318 0 0)
+)
+defineGateSize "AOI22_X1" "A1" 0.05225
+defineHierAntennaProp "AOI22_X1" "A1" '(
+("metal1" 0.05225 0.03 0 0 0.0949 0 0)
+)
+defineGateSize "AOI22_X1" "A2" 0.05225
+defineHierAntennaProp "AOI22_X1" "A2" '(
+("metal1" 0.05225 0.03 0 0 0.0949 0 0)
+)
+defineGateSize "AOI22_X1" "B1" 0.05225
+defineHierAntennaProp "AOI22_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "AOI22_X1" "B2" 0.05225
+defineHierAntennaProp "AOI22_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "AOI22_X1" "ZN" '(0.1463)
+defineHierAntennaProp "AOI22_X1" "ZN" '(
+("metal1" 0 0.07245 0 0 0.2873 0 0)
+)
+defineGateSize "AOI22_X2" "A1" 0.1045
+defineHierAntennaProp "AOI22_X2" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI22_X2" "A2" 0.1045
+defineHierAntennaProp "AOI22_X2" "A2" '(
+("metal1" 0.1045 0.078825 0 0 0.2691 0 0)
+)
+defineGateSize "AOI22_X2" "B1" 0.1045
+defineHierAntennaProp "AOI22_X2" "B1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "AOI22_X2" "B2" 0.1045
+defineHierAntennaProp "AOI22_X2" "B2" '(
+("metal1" 0.1045 0.09785 0 0 0.3237 0 0)
+)
+defineDiodeProtection "AOI22_X2" "ZN" '(0.2926)
+defineHierAntennaProp "AOI22_X2" "ZN" '(
+("metal1" 0 0.2065 0 0 0.7072 0 0)
+)
+defineGateSize "AOI22_X4" "A1" 0.209
+defineHierAntennaProp "AOI22_X4" "A1" '(
+("metal1" 0.209 0.09635 0 0 0.3133 0 0)
+)
+defineGateSize "AOI22_X4" "A2" 0.209
+defineHierAntennaProp "AOI22_X4" "A2" '(
+("metal1" 0.209 0.146175 0 0 0.4875 0 0)
+)
+defineGateSize "AOI22_X4" "B1" 0.209
+defineHierAntennaProp "AOI22_X4" "B1" '(
+("metal1" 0.209 0.09775 0 0 0.3185 0 0)
+)
+defineGateSize "AOI22_X4" "B2" 0.209
+defineHierAntennaProp "AOI22_X4" "B2" '(
+("metal1" 0.209 0.139325 0 0 0.5031 0 0)
+)
+defineDiodeProtection "AOI22_X4" "ZN" '(0.5852)
+defineHierAntennaProp "AOI22_X4" "ZN" '(
+("metal1" 0 0.36155 0 0 1.3611 0 0)
+)
+defineGateSize "BUF_X1" "A" 0.02625
+defineHierAntennaProp "BUF_X1" "A" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "BUF_X1" "Z" '(0.109725)
+defineHierAntennaProp "BUF_X1" "Z" '(
+("metal1" 0 0.0945 0 0 0.2964 0 0)
+)
+defineGateSize "BUF_X16" "A" 0.418
+defineHierAntennaProp "BUF_X16" "A" '(
+("metal1" 0.418 0.02375 0 0 0.0819 0 0)
+)
+defineDiodeProtection "BUF_X16" "Z" '(1.1704)
+defineHierAntennaProp "BUF_X16" "Z" '(
+("metal1" 0 0.7364 0 0 2.0644 0 0)
+)
+defineGateSize "BUF_X2" "A" 0.05225
+defineHierAntennaProp "BUF_X2" "A" '(
+("metal1" 0.05225 0.02975 0 0 0.0897 0 0)
+)
+defineDiodeProtection "BUF_X2" "Z" '(0.1463)
+defineHierAntennaProp "BUF_X2" "Z" '(
+("metal1" 0 0.1001 0 0 0.3471 0 0)
+)
+defineGateSize "BUF_X32" "A" 0.836
+defineHierAntennaProp "BUF_X32" "A" '(
+("metal1" 0.836 0.3672 0 0 1.1141 0 0)
+)
+defineDiodeProtection "BUF_X32" "Z" '(2.3617)
+defineHierAntennaProp "BUF_X32" "Z" '(
+("metal1" 0 1.39335 0 0 3.7141 0 0)
+)
+defineGateSize "BUF_X4" "A" 0.1045
+defineHierAntennaProp "BUF_X4" "A" '(
+("metal1" 0.1045 0.01925 0 0 0.0741 0 0)
+)
+defineDiodeProtection "BUF_X4" "Z" '(0.2926)
+defineHierAntennaProp "BUF_X4" "Z" '(
+("metal1" 0 0.1974 0 0 0.6526 0 0)
+)
+defineGateSize "BUF_X8" "A" 0.209
+defineHierAntennaProp "BUF_X8" "A" '(
+("metal1" 0.209 0.01925 0 0 0.0741 0 0)
+)
+defineDiodeProtection "BUF_X8" "Z" '(0.5852)
+defineHierAntennaProp "BUF_X8" "Z" '(
+("metal1" 0 0.4368 0 0 1.3468 0 0)
+)
+defineGateSize "CLKBUF_X1" "A" 0.0205
+defineHierAntennaProp "CLKBUF_X1" "A" '(
+("metal1" 0.0205 0.02625 0 0 0.0845 0 0)
+)
+defineDiodeProtection "CLKBUF_X1" "Z" '(0.086625)
+defineHierAntennaProp "CLKBUF_X1" "Z" '(
+("metal1" 0 0.0763 0 0 0.3016 0 0)
+)
+defineGateSize "CLKBUF_X2" "A" 0.04125
+defineHierAntennaProp "CLKBUF_X2" "A" '(
+("metal1" 0.04125 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "CLKBUF_X2" "Z" '(0.1155)
+defineHierAntennaProp "CLKBUF_X2" "Z" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "CLKBUF_X3" "A" 0.04125
+defineHierAntennaProp "CLKBUF_X3" "A" '(
+("metal1" 0.04125 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "CLKBUF_X3" "Z" '(0.202125)
+defineHierAntennaProp "CLKBUF_X3" "Z" '(
+("metal1" 0 0.1813 0 0 0.5954 0 0)
+)
+defineGateSize "CLKGATETST_X1" "CK" 0.0525
+defineHierAntennaProp "CLKGATETST_X1" "CK" '(
+("metal1" 0.0525 0.0203 0 0 0.0741 0 0)
+)
+defineGateSize "CLKGATETST_X1" "E" 0.02625
+defineHierAntennaProp "CLKGATETST_X1" "E" '(
+("metal1" 0.02625 0.0182 0 0 0.0702 0 0)
+)
+defineGateSize "CLKGATETST_X1" "SE" 0.02625
+defineHierAntennaProp "CLKGATETST_X1" "SE" '(
+("metal1" 0.02625 0.0175 0 0 0.0689 0 0)
+)
+defineDiodeProtection "CLKGATETST_X1" "GCK" '(0.086625)
+defineHierAntennaProp "CLKGATETST_X1" "GCK" '(
+("metal1" 0 0.075225 0 0 0.2522 0 0)
+)
+defineGateSize "CLKGATETST_X2" "CK" 0.0785
+defineHierAntennaProp "CLKGATETST_X2" "CK" '(
+("metal1" 0.0785 0.102025 0 0 0.3549 0 0)
+)
+defineGateSize "CLKGATETST_X2" "E" 0.02625
+defineHierAntennaProp "CLKGATETST_X2" "E" '(
+("metal1" 0.02625 0.020625 0 0 0.0754 0 0)
+)
+defineGateSize "CLKGATETST_X2" "SE" 0.02625
+defineHierAntennaProp "CLKGATETST_X2" "SE" '(
+("metal1" 0.02625 0.017325 0 0 0.0702 0 0)
+)
+defineDiodeProtection "CLKGATETST_X2" "GCK" '(0.1155)
+defineHierAntennaProp "CLKGATETST_X2" "GCK" '(
+("metal1" 0 0.0508 0 0 0.1859 0 0)
+)
+defineGateSize "CLKGATETST_X4" "CK" 0.13075
+defineHierAntennaProp "CLKGATETST_X4" "CK" '(
+("metal1" 0.13075 0.1002 0 0 0.3146 0 0)
+)
+defineGateSize "CLKGATETST_X4" "E" 0.02625
+defineHierAntennaProp "CLKGATETST_X4" "E" '(
+("metal1" 0.02625 0.02795 0 0 0.0897 0 0)
+)
+defineGateSize "CLKGATETST_X4" "SE" 0.02625
+defineHierAntennaProp "CLKGATETST_X4" "SE" '(
+("metal1" 0.02625 0.026875 0 0 0.0884 0 0)
+)
+defineDiodeProtection "CLKGATETST_X4" "GCK" '(0.231)
+defineHierAntennaProp "CLKGATETST_X4" "GCK" '(
+("metal1" 0 0.1463 0 0 0.4654 0 0)
+)
+defineGateSize "CLKGATETST_X8" "CK" 0.23525
+defineHierAntennaProp "CLKGATETST_X8" "CK" '(
+("metal1" 0.23525 0.18095 0 0 0.6903 0 0)
+)
+defineGateSize "CLKGATETST_X8" "E" 0.02625
+defineHierAntennaProp "CLKGATETST_X8" "E" '(
+("metal1" 0.02625 0.0252 0 0 0.0832 0 0)
+)
+defineGateSize "CLKGATETST_X8" "SE" 0.02625
+defineHierAntennaProp "CLKGATETST_X8" "SE" '(
+("metal1" 0.02625 0.0266 0 0 0.0858 0 0)
+)
+defineDiodeProtection "CLKGATETST_X8" "GCK" '(0.462)
+defineHierAntennaProp "CLKGATETST_X8" "GCK" '(
+("metal1" 0 0.44895 0 0 1.3585 0 0)
+)
+defineGateSize "CLKGATE_X1" "CK" 0.0525
+defineHierAntennaProp "CLKGATE_X1" "CK" '(
+("metal1" 0.0525 0.0497 0 0 0.1287 0 0)
+)
+defineGateSize "CLKGATE_X1" "E" 0.02625
+defineHierAntennaProp "CLKGATE_X1" "E" '(
+("metal1" 0.02625 0.02975 0 0 0.0897 0 0)
+)
+defineDiodeProtection "CLKGATE_X1" "GCK" '(0.086625)
+defineHierAntennaProp "CLKGATE_X1" "GCK" '(
+("metal1" 0 0.0915 0 0 0.2639 0 0)
+)
+defineGateSize "CLKGATE_X2" "CK" 0.0785
+defineHierAntennaProp "CLKGATE_X2" "CK" '(
+("metal1" 0.0785 0.0168 0 0 0.0806 0 0)
+)
+defineGateSize "CLKGATE_X2" "E" 0.02625
+defineHierAntennaProp "CLKGATE_X2" "E" '(
+("metal1" 0.02625 0.0289 0 0 0.0884 0 0)
+)
+defineDiodeProtection "CLKGATE_X2" "GCK" '(0.1155)
+defineHierAntennaProp "CLKGATE_X2" "GCK" '(
+("metal1" 0 0.0927 0 0 0.2912 0 0)
+)
+defineGateSize "CLKGATE_X4" "CK" 0.13075
+defineHierAntennaProp "CLKGATE_X4" "CK" '(
+("metal1" 0.13075 0.0717 0 0 0.2444 0 0)
+)
+defineGateSize "CLKGATE_X4" "E" 0.02625
+defineHierAntennaProp "CLKGATE_X4" "E" '(
+("metal1" 0.02625 0.0336 0 0 0.0962 0 0)
+)
+defineDiodeProtection "CLKGATE_X4" "GCK" '(0.231)
+defineHierAntennaProp "CLKGATE_X4" "GCK" '(
+("metal1" 0 0.1946 0 0 0.6448 0 0)
+)
+defineGateSize "CLKGATE_X8" "CK" 0.23525
+defineHierAntennaProp "CLKGATE_X8" "CK" '(
+("metal1" 0.23525 0.1453 0 0 0.533 0 0)
+)
+defineGateSize "CLKGATE_X8" "E" 0.03475
+defineHierAntennaProp "CLKGATE_X8" "E" '(
+("metal1" 0.03475 0.0231 0 0 0.0793 0 0)
+)
+defineDiodeProtection "CLKGATE_X8" "GCK" '(0.462)
+defineHierAntennaProp "CLKGATE_X8" "GCK" '(
+("metal1" 0 0.4326 0 0 1.3312 0 0)
+)
+defineGateSize "DFFRS_X1" "D" 0.03475
+defineHierAntennaProp "DFFRS_X1" "D" '(
+("metal1" 0.03475 0.04845 0 0 0.1157 0 0)
+)
+defineGateSize "DFFRS_X1" "RN" 0.03525
+defineHierAntennaProp "DFFRS_X1" "RN" '(
+("metal1" 0.03525 0.0203 0 0 0.0741 0 0)
+)
+defineGateSize "DFFRS_X1" "SN" 0.0615
+defineHierAntennaProp "DFFRS_X1" "SN" '(
+("metal1" 0.0615 0.0126 0 0 0.0598 0 0)
+)
+defineGateSize "DFFRS_X1" "CK" 0.02625
+defineHierAntennaProp "DFFRS_X1" "CK" '(
+("metal1" 0.02625 0.031175 0 0 0.0936 0 0)
+)
+defineDiodeProtection "DFFRS_X1" "Q" '(0.109725)
+defineHierAntennaProp "DFFRS_X1" "Q" '(
+("metal1" 0 0.03325 0 0 0.1417 0 0)
+)
+defineDiodeProtection "DFFRS_X1" "QN" '(0.109725)
+defineHierAntennaProp "DFFRS_X1" "QN" '(
+("metal1" 0 0.0623 0 0 0.2496 0 0)
+)
+defineGateSize "DFFRS_X2" "D" 0.03475
+defineHierAntennaProp "DFFRS_X2" "D" '(
+("metal1" 0.03475 0.04495 0 0 0.13 0 0)
+)
+defineGateSize "DFFRS_X2" "RN" 0.04875
+defineHierAntennaProp "DFFRS_X2" "RN" '(
+("metal1" 0.04875 0.01085 0 0 0.0585 0 0)
+)
+defineGateSize "DFFRS_X2" "SN" 0.075
+defineHierAntennaProp "DFFRS_X2" "SN" '(
+("metal1" 0.075 0.01085 0 0 0.0585 0 0)
+)
+defineGateSize "DFFRS_X2" "CK" 0.02625
+defineHierAntennaProp "DFFRS_X2" "CK" '(
+("metal1" 0.02625 0.016 0 0 0.0676 0 0)
+)
+defineDiodeProtection "DFFRS_X2" "Q" '(0.1463)
+defineHierAntennaProp "DFFRS_X2" "Q" '(
+("metal1" 0 0.042375 0 0 0.1664 0 0)
+)
+defineDiodeProtection "DFFRS_X2" "QN" '(0.1463)
+defineHierAntennaProp "DFFRS_X2" "QN" '(
+("metal1" 0 0.0612 0 0 0.2197 0 0)
+)
+defineGateSize "DFFR_X1" "D" 0.03475
+defineHierAntennaProp "DFFR_X1" "D" '(
+("metal1" 0.03475 0.0222 0 0 0.0793 0 0)
+)
+defineGateSize "DFFR_X1" "RN" 0.03525
+defineHierAntennaProp "DFFR_X1" "RN" '(
+("metal1" 0.03525 0.181 0 0 0.6682 0 0)
+)
+defineGateSize "DFFR_X1" "CK" 0.02625
+defineHierAntennaProp "DFFR_X1" "CK" '(
+("metal1" 0.02625 0.0203 0 0 0.0741 0 0)
+)
+defineDiodeProtection "DFFR_X1" "Q" '(0.109725)
+defineHierAntennaProp "DFFR_X1" "Q" '(
+("metal1" 0 0.0852 0 0 0.2977 0 0)
+)
+defineDiodeProtection "DFFR_X1" "QN" '(0.109725)
+defineHierAntennaProp "DFFR_X1" "QN" '(
+("metal1" 0 0.06375 0 0 0.2405 0 0)
+)
+defineGateSize "DFFR_X2" "D" 0.03475
+defineHierAntennaProp "DFFR_X2" "D" '(
+("metal1" 0.03475 0.0198 0 0 0.0754 0 0)
+)
+defineGateSize "DFFR_X2" "RN" 0.06125
+defineHierAntennaProp "DFFR_X2" "RN" '(
+("metal1" 0.06125 0.1876 0 0 0.6331 0 0)
+)
+defineGateSize "DFFR_X2" "CK" 0.02625
+defineHierAntennaProp "DFFR_X2" "CK" '(
+("metal1" 0.02625 0.0175 0 0 0.0689 0 0)
+)
+defineDiodeProtection "DFFR_X2" "Q" '(0.1463)
+defineHierAntennaProp "DFFR_X2" "Q" '(
+("metal1" 0 0.067125 0 0 0.2522 0 0)
+)
+defineDiodeProtection "DFFR_X2" "QN" '(0.1904)
+defineHierAntennaProp "DFFR_X2" "QN" '(
+("metal1" 0 0.0518 0 0 0.1924 0 0)
+)
+defineGateSize "DFFS_X1" "D" 0.03475
+defineHierAntennaProp "DFFS_X1" "D" '(
+("metal1" 0.03475 0.0238 0 0 0.0806 0 0)
+)
+defineGateSize "DFFS_X1" "SN" 0.03525
+defineHierAntennaProp "DFFS_X1" "SN" '(
+("metal1" 0.03525 0.0231 0 0 0.0793 0 0)
+)
+defineGateSize "DFFS_X1" "CK" 0.02625
+defineHierAntennaProp "DFFS_X1" "CK" '(
+("metal1" 0.02625 0.026275 0 0 0.1001 0 0)
+)
+defineDiodeProtection "DFFS_X1" "Q" '(0.109725)
+defineHierAntennaProp "DFFS_X1" "Q" '(
+("metal1" 0 0.08155 0 0 0.2964 0 0)
+)
+defineDiodeProtection "DFFS_X1" "QN" '(0.109725)
+defineHierAntennaProp "DFFS_X1" "QN" '(
+("metal1" 0 0.0651 0 0 0.2353 0 0)
+)
+defineGateSize "DFFS_X2" "D" 0.03475
+defineHierAntennaProp "DFFS_X2" "D" '(
+("metal1" 0.03475 0.0224 0 0 0.078 0 0)
+)
+defineGateSize "DFFS_X2" "SN" 0.03525
+defineHierAntennaProp "DFFS_X2" "SN" '(
+("metal1" 0.03525 0.0161 0 0 0.0663 0 0)
+)
+defineGateSize "DFFS_X2" "CK" 0.02625
+defineHierAntennaProp "DFFS_X2" "CK" '(
+("metal1" 0.02625 0.0225 0 0 0.0884 0 0)
+)
+defineDiodeProtection "DFFS_X2" "Q" '(0.1463)
+defineHierAntennaProp "DFFS_X2" "Q" '(
+("metal1" 0 0.03675 0 0 0.1547 0 0)
+)
+defineDiodeProtection "DFFS_X2" "QN" '(0.1463)
+defineHierAntennaProp "DFFS_X2" "QN" '(
+("metal1" 0 0.03675 0 0 0.1547 0 0)
+)
+defineGateSize "DFF_X1" "D" 0.03475
+defineHierAntennaProp "DFF_X1" "D" '(
+("metal1" 0.03475 0.0272 0 0 0.0858 0 0)
+)
+defineGateSize "DFF_X1" "CK" 0.02625
+defineHierAntennaProp "DFF_X1" "CK" '(
+("metal1" 0.02625 0.0187 0 0 0.0728 0 0)
+)
+defineDiodeProtection "DFF_X1" "Q" '(0.109725)
+defineHierAntennaProp "DFF_X1" "Q" '(
+("metal1" 0 0.0609 0 0 0.2444 0 0)
+)
+defineDiodeProtection "DFF_X1" "QN" '(0.109725)
+defineHierAntennaProp "DFF_X1" "QN" '(
+("metal1" 0 0.03675 0 0 0.1547 0 0)
+)
+defineGateSize "DFF_X2" "D" 0.03475
+defineHierAntennaProp "DFF_X2" "D" '(
+("metal1" 0.03475 0.0196 0 0 0.0728 0 0)
+)
+defineGateSize "DFF_X2" "CK" 0.02625
+defineHierAntennaProp "DFF_X2" "CK" '(
+("metal1" 0.02625 0.0112 0 0 0.0572 0 0)
+)
+defineDiodeProtection "DFF_X2" "Q" '(0.1463)
+defineHierAntennaProp "DFF_X2" "Q" '(
+("metal1" 0 0.06055 0 0 0.2431 0 0)
+)
+defineDiodeProtection "DFF_X2" "QN" '(0.1463)
+defineHierAntennaProp "DFF_X2" "QN" '(
+("metal1" 0 0.04725 0 0 0.1937 0 0)
+)
+defineGateSize "DLH_X1" "D" 0.02625
+defineHierAntennaProp "DLH_X1" "D" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "DLH_X1" "G" 0.02625
+defineHierAntennaProp "DLH_X1" "G" '(
+("metal1" 0.02625 0.021 0 0 0.0767 0 0)
+)
+defineDiodeProtection "DLH_X1" "Q" '(0.109725)
+defineHierAntennaProp "DLH_X1" "Q" '(
+("metal1" 0 0.042 0 0 0.1742 0 0)
+)
+defineGateSize "DLH_X2" "D" 0.03475
+defineHierAntennaProp "DLH_X2" "D" '(
+("metal1" 0.03475 0.023625 0 0 0.0806 0 0)
+)
+defineGateSize "DLH_X2" "G" 0.02625
+defineHierAntennaProp "DLH_X2" "G" '(
+("metal1" 0.02625 0.0245 0 0 0.0819 0 0)
+)
+defineDiodeProtection "DLH_X2" "Q" '(0.1463)
+defineHierAntennaProp "DLH_X2" "Q" '(
+("metal1" 0 0.042 0 0 0.1742 0 0)
+)
+defineGateSize "DLL_X1" "D" 0.02625
+defineHierAntennaProp "DLL_X1" "D" '(
+("metal1" 0.02625 0.0252 0 0 0.0832 0 0)
+)
+defineGateSize "DLL_X1" "GN" 0.02625
+defineHierAntennaProp "DLL_X1" "GN" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "DLL_X1" "Q" '(0.109725)
+defineHierAntennaProp "DLL_X1" "Q" '(
+("metal1" 0 0.0406 0 0 0.169 0 0)
+)
+defineGateSize "DLL_X2" "D" 0.03475
+defineHierAntennaProp "DLL_X2" "D" '(
+("metal1" 0.03475 0.0247 0 0 0.0832 0 0)
+)
+defineGateSize "DLL_X2" "GN" 0.02625
+defineHierAntennaProp "DLL_X2" "GN" '(
+("metal1" 0.02625 0.021 0 0 0.0767 0 0)
+)
+defineDiodeProtection "DLL_X2" "Q" '(0.1463)
+defineHierAntennaProp "DLL_X2" "Q" '(
+("metal1" 0 0.05215 0 0 0.2119 0 0)
+)
+defineGateSize "FA_X1" "A" 0.105
+defineHierAntennaProp "FA_X1" "A" '(
+("metal1" 0.105 0.1391 0 0 0.507 0 0)
+)
+defineGateSize "FA_X1" "B" 0.105
+defineHierAntennaProp "FA_X1" "B" '(
+("metal1" 0.105 0.0833 0 0 0.312 0 0)
+)
+defineGateSize "FA_X1" "CI" 0.07875
+defineHierAntennaProp "FA_X1" "CI" '(
+("metal1" 0.07875 0.1246 0 0 0.481 0 0)
+)
+defineDiodeProtection "FA_X1" "CO" '(0.109725)
+defineHierAntennaProp "FA_X1" "CO" '(
+("metal1" 0 0.0765 0 0 0.2847 0 0)
+)
+defineDiodeProtection "FA_X1" "S" '(0.109725)
+defineHierAntennaProp "FA_X1" "S" '(
+("metal1" 0 0.0918 0 0 0.2886 0 0)
+)
+defineGateSize "HA_X1" "A" 0.10475
+defineHierAntennaProp "HA_X1" "A" '(
+("metal1" 0.10475 0.0812 0 0 0.3198 0 0)
+)
+defineGateSize "HA_X1" "B" 0.10475
+defineHierAntennaProp "HA_X1" "B" '(
+("metal1" 0.10475 0.0857 0 0 0.3276 0 0)
+)
+defineDiodeProtection "HA_X1" "CO" '(0.109725)
+defineHierAntennaProp "HA_X1" "CO" '(
+("metal1" 0 0.088 0 0 0.3068 0 0)
+)
+defineDiodeProtection "HA_X1" "S" '(0.1463)
+defineHierAntennaProp "HA_X1" "S" '(
+("metal1" 0 0.1085 0 0 0.4212 0 0)
+)
+defineGateSize "INV_X1" "A" 0.05225
+defineHierAntennaProp "INV_X1" "A" '(
+("metal1" 0.05225 0.018375 0 0 0.0728 0 0)
+)
+defineDiodeProtection "INV_X1" "ZN" '(0.109725)
+defineHierAntennaProp "INV_X1" "ZN" '(
+("metal1" 0 0.1045 0 0 0.3107 0 0)
+)
+defineGateSize "INV_X16" "A" 0.836
+defineHierAntennaProp "INV_X16" "A" '(
+("metal1" 0.836 0.357 0 0 1.3442 0 0)
+)
+defineDiodeProtection "INV_X16" "ZN" '(1.1704)
+defineHierAntennaProp "INV_X16" "ZN" '(
+("metal1" 0 0.7672 0 0 2.1788 0 0)
+)
+defineGateSize "INV_X2" "A" 0.1045
+defineHierAntennaProp "INV_X2" "A" '(
+("metal1" 0.1045 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "INV_X2" "ZN" '(0.1463)
+defineHierAntennaProp "INV_X2" "ZN" '(
+("metal1" 0 0.077 0 0 0.3042 0 0)
+)
+defineGateSize "INV_X32" "A" 1.672
+defineHierAntennaProp "INV_X32" "A" '(
+("metal1" 1.672 0.57155 0 0 2.1411 0 0)
+)
+defineDiodeProtection "INV_X32" "ZN" '(2.3408)
+defineHierAntennaProp "INV_X32" "ZN" '(
+("metal1" 0 1.4497 0 0 3.9221 0 0)
+)
+defineGateSize "INV_X4" "A" 0.209
+defineHierAntennaProp "INV_X4" "A" '(
+("metal1" 0.209 0.01925 0 0 0.0741 0 0)
+)
+defineDiodeProtection "INV_X4" "ZN" '(0.2926)
+defineHierAntennaProp "INV_X4" "ZN" '(
+("metal1" 0 0.17005 0 0 0.5434 0 0)
+)
+defineGateSize "INV_X8" "A" 0.418
+defineHierAntennaProp "INV_X8" "A" '(
+("metal1" 0.418 0.01925 0 0 0.0741 0 0)
+)
+defineDiodeProtection "INV_X8" "ZN" '(0.5852)
+defineHierAntennaProp "INV_X8" "ZN" '(
+("metal1" 0 0.3794 0 0 1.131 0 0)
+)
+defineDiodeProtection "LOGIC0_X1" "Z" '(0.00945)
+defineHierAntennaProp "LOGIC0_X1" "Z" '(
+("metal1" 0 0.0483 0 0 0.1976 0 0)
+)
+defineDiodeProtection "LOGIC1_X1" "Z" '(0.014175)
+defineHierAntennaProp "LOGIC1_X1" "Z" '(
+("metal1" 0 0.0483 0 0 0.1976 0 0)
+)
+defineGateSize "MUX2_X1" "A" 0.02625
+defineHierAntennaProp "MUX2_X1" "A" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "MUX2_X1" "B" 0.02625
+defineHierAntennaProp "MUX2_X1" "B" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "MUX2_X1" "S" 0.0525
+defineHierAntennaProp "MUX2_X1" "S" '(
+("metal1" 0.0525 0.08355 0 0 0.2795 0 0)
+)
+defineDiodeProtection "MUX2_X1" "Z" '(0.109725)
+defineHierAntennaProp "MUX2_X1" "Z" '(
+("metal1" 0 0.0936 0 0 0.2938 0 0)
+)
+defineGateSize "MUX2_X2" "A" 0.05225
+defineHierAntennaProp "MUX2_X2" "A" '(
+("metal1" 0.05225 0.028875 0 0 0.0884 0 0)
+)
+defineGateSize "MUX2_X2" "B" 0.05225
+defineHierAntennaProp "MUX2_X2" "B" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "MUX2_X2" "S" 0.0785
+defineHierAntennaProp "MUX2_X2" "S" '(
+("metal1" 0.0785 0.115325 0 0 0.3861 0 0)
+)
+defineDiodeProtection "MUX2_X2" "Z" '(0.1463)
+defineHierAntennaProp "MUX2_X2" "Z" '(
+("metal1" 0 0.05715 0 0 0.1885 0 0)
+)
+defineGateSize "NAND2_X1" "A1" 0.05225
+defineHierAntennaProp "NAND2_X1" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NAND2_X1" "A2" 0.05225
+defineHierAntennaProp "NAND2_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "NAND2_X1" "ZN" '(0.131775)
+defineHierAntennaProp "NAND2_X1" "ZN" '(
+("metal1" 0 0.0896 0 0 0.351 0 0)
+)
+defineGateSize "NAND2_X2" "A1" 0.1045
+defineHierAntennaProp "NAND2_X2" "A1" '(
+("metal1" 0.1045 0.01225 0 0 0.0637 0 0)
+)
+defineGateSize "NAND2_X2" "A2" 0.1045
+defineHierAntennaProp "NAND2_X2" "A2" '(
+("metal1" 0.1045 0.083625 0 0 0.3107 0 0)
+)
+defineDiodeProtection "NAND2_X2" "ZN" '(0.2345)
+defineHierAntennaProp "NAND2_X2" "ZN" '(
+("metal1" 0 0.16555 0 0 0.6331 0 0)
+)
+defineGateSize "NAND2_X4" "A1" 0.209
+defineHierAntennaProp "NAND2_X4" "A1" '(
+("metal1" 0.209 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "NAND2_X4" "A2" 0.209
+defineHierAntennaProp "NAND2_X4" "A2" '(
+("metal1" 0.209 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "NAND2_X4" "ZN" '(0.469)
+defineHierAntennaProp "NAND2_X4" "ZN" '(
+("metal1" 0 0.208475 0 0 0.7683 0 0)
+)
+defineGateSize "NAND3_X1" "A1" 0.05225
+defineHierAntennaProp "NAND3_X1" "A1" '(
+("metal1" 0.05225 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "NAND3_X1" "A2" 0.05225
+defineHierAntennaProp "NAND3_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NAND3_X1" "A3" 0.05225
+defineHierAntennaProp "NAND3_X1" "A3" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "NAND3_X1" "ZN" '(0.197925)
+defineHierAntennaProp "NAND3_X1" "ZN" '(
+("metal1" 0 0.1352 0 0 0.4992 0 0)
+)
+defineGateSize "NAND3_X2" "A1" 0.1045
+defineHierAntennaProp "NAND3_X2" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "NAND3_X2" "A2" 0.1045
+defineHierAntennaProp "NAND3_X2" "A2" '(
+("metal1" 0.1045 0.0882 0 0 0.299 0 0)
+)
+defineGateSize "NAND3_X2" "A3" 0.1045
+defineHierAntennaProp "NAND3_X2" "A3" '(
+("metal1" 0.1045 0.10955 0 0 0.4108 0 0)
+)
+defineDiodeProtection "NAND3_X2" "ZN" '(0.3227)
+defineHierAntennaProp "NAND3_X2" "ZN" '(
+("metal1" 0 0.2184 0 0 0.8294 0 0)
+)
+defineGateSize "NAND3_X4" "A1" 0.209
+defineHierAntennaProp "NAND3_X4" "A1" '(
+("metal1" 0.209 0.12565 0 0 0.4849 0 0)
+)
+defineGateSize "NAND3_X4" "A2" 0.209
+defineHierAntennaProp "NAND3_X4" "A2" '(
+("metal1" 0.209 0.197275 0 0 0.6968 0 0)
+)
+defineGateSize "NAND3_X4" "A3" 0.209
+defineHierAntennaProp "NAND3_X4" "A3" '(
+("metal1" 0.209 0.225475 0 0 0.7917 0 0)
+)
+defineDiodeProtection "NAND3_X4" "ZN" '(0.6454)
+defineHierAntennaProp "NAND3_X4" "ZN" '(
+("metal1" 0 0.5439 0 0 1.5444 0 0)
+)
+defineGateSize "NAND4_X1" "A1" 0.05225
+defineHierAntennaProp "NAND4_X1" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NAND4_X1" "A2" 0.05225
+defineHierAntennaProp "NAND4_X1" "A2" '(
+("metal1" 0.05225 0.0276 0 0 0.0923 0 0)
+)
+defineGateSize "NAND4_X1" "A3" 0.05225
+defineHierAntennaProp "NAND4_X1" "A3" '(
+("metal1" 0.05225 0.03 0 0 0.0949 0 0)
+)
+defineGateSize "NAND4_X1" "A4" 0.05225
+defineHierAntennaProp "NAND4_X1" "A4" '(
+("metal1" 0.05225 0.03 0 0 0.0949 0 0)
+)
+defineDiodeProtection "NAND4_X1" "ZN" '(0.219975)
+defineHierAntennaProp "NAND4_X1" "ZN" '(
+("metal1" 0 0.1451 0 0 0.5382 0 0)
+)
+defineGateSize "NAND4_X2" "A1" 0.1045
+defineHierAntennaProp "NAND4_X2" "A1" '(
+("metal1" 0.1045 0.027675 0 0 0.0884 0 0)
+)
+defineGateSize "NAND4_X2" "A2" 0.1045
+defineHierAntennaProp "NAND4_X2" "A2" '(
+("metal1" 0.1045 0.108125 0 0 0.3575 0 0)
+)
+defineGateSize "NAND4_X2" "A3" 0.1045
+defineHierAntennaProp "NAND4_X2" "A3" '(
+("metal1" 0.1045 0.10905 0 0 0.3861 0 0)
+)
+defineGateSize "NAND4_X2" "A4" 0.1045
+defineHierAntennaProp "NAND4_X2" "A4" '(
+("metal1" 0.1045 0.162975 0 0 0.5551 0 0)
+)
+defineDiodeProtection "NAND4_X2" "ZN" '(0.4109)
+defineHierAntennaProp "NAND4_X2" "ZN" '(
+("metal1" 0 0.31725 0 0 1.0179 0 0)
+)
+defineGateSize "NAND4_X4" "A1" 0.209
+defineHierAntennaProp "NAND4_X4" "A1" '(
+("metal1" 0.209 0.018375 0 0 0.0728 0 0)
+)
+defineGateSize "NAND4_X4" "A2" 0.209
+defineHierAntennaProp "NAND4_X4" "A2" '(
+("metal1" 0.209 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "NAND4_X4" "A3" 0.209
+defineHierAntennaProp "NAND4_X4" "A3" '(
+("metal1" 0.209 0.01225 0 0 0.0637 0 0)
+)
+defineGateSize "NAND4_X4" "A4" 0.209
+defineHierAntennaProp "NAND4_X4" "A4" '(
+("metal1" 0.209 0.01225 0 0 0.0637 0 0)
+)
+defineDiodeProtection "NAND4_X4" "ZN" '(0.9604)
+defineHierAntennaProp "NAND4_X4" "ZN" '(
+("metal1" 0 0.6363 0 0 1.5548 0 0)
+)
+defineGateSize "NOR2_X1" "A1" 0.05225
+defineHierAntennaProp "NOR2_X1" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NOR2_X1" "A2" 0.05225
+defineHierAntennaProp "NOR2_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "NOR2_X1" "ZN" '(0.12425)
+defineHierAntennaProp "NOR2_X1" "ZN" '(
+("metal1" 0 0.0896 0 0 0.351 0 0)
+)
+defineGateSize "NOR2_X2" "A1" 0.1045
+defineHierAntennaProp "NOR2_X2" "A1" '(
+("metal1" 0.1045 0.0168 0 0 0.0806 0 0)
+)
+defineGateSize "NOR2_X2" "A2" 0.1045
+defineHierAntennaProp "NOR2_X2" "A2" '(
+("metal1" 0.1045 0.08865 0 0 0.3029 0 0)
+)
+defineDiodeProtection "NOR2_X2" "ZN" '(0.2044)
+defineHierAntennaProp "NOR2_X2" "ZN" '(
+("metal1" 0 0.14035 0 0 0.5395 0 0)
+)
+defineGateSize "NOR2_X4" "A1" 0.209
+defineHierAntennaProp "NOR2_X4" "A1" '(
+("metal1" 0.209 0.0705 0 0 0.2548 0 0)
+)
+defineGateSize "NOR2_X4" "A2" 0.209
+defineHierAntennaProp "NOR2_X4" "A2" '(
+("metal1" 0.209 0.19355 0 0 0.6526 0 0)
+)
+defineDiodeProtection "NOR2_X4" "ZN" '(0.4088)
+defineHierAntennaProp "NOR2_X4" "ZN" '(
+("metal1" 0 0.165625 0 0 0.6058 0 0)
+)
+defineGateSize "NOR3_X1" "A1" 0.05225
+defineHierAntennaProp "NOR3_X1" "A1" '(
+("metal1" 0.05225 0.018375 0 0 0.0728 0 0)
+)
+defineGateSize "NOR3_X1" "A2" 0.05225
+defineHierAntennaProp "NOR3_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NOR3_X1" "A3" 0.05225
+defineHierAntennaProp "NOR3_X1" "A3" '(
+("metal1" 0.05225 0.020125 0 0 0.0754 0 0)
+)
+defineDiodeProtection "NOR3_X1" "ZN" '(0.167825)
+defineHierAntennaProp "NOR3_X1" "ZN" '(
+("metal1" 0 0.1171 0 0 0.3952 0 0)
+)
+defineGateSize "NOR3_X2" "A1" 0.1045
+defineHierAntennaProp "NOR3_X2" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "NOR3_X2" "A2" 0.1045
+defineHierAntennaProp "NOR3_X2" "A2" '(
+("metal1" 0.1045 0.07815 0 0 0.2704 0 0)
+)
+defineGateSize "NOR3_X2" "A3" 0.1045
+defineHierAntennaProp "NOR3_X2" "A3" '(
+("metal1" 0.1045 0.123025 0 0 0.4251 0 0)
+)
+defineDiodeProtection "NOR3_X2" "ZN" '(0.2625)
+defineHierAntennaProp "NOR3_X2" "ZN" '(
+("metal1" 0 0.1736 0 0 0.663 0 0)
+)
+defineGateSize "NOR3_X4" "A1" 0.209
+defineHierAntennaProp "NOR3_X4" "A1" '(
+("metal1" 0.209 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "NOR3_X4" "A2" 0.209
+defineHierAntennaProp "NOR3_X4" "A2" '(
+("metal1" 0.209 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "NOR3_X4" "A3" 0.209
+defineHierAntennaProp "NOR3_X4" "A3" '(
+("metal1" 0.209 0.0175 0 0 0.0715 0 0)
+)
+defineDiodeProtection "NOR3_X4" "ZN" '(0.525)
+defineHierAntennaProp "NOR3_X4" "ZN" '(
+("metal1" 0 0.346875 0 0 1.2857 0 0)
+)
+defineGateSize "NOR4_X1" "A1" 0.05225
+defineHierAntennaProp "NOR4_X1" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NOR4_X1" "A2" 0.05225
+defineHierAntennaProp "NOR4_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NOR4_X1" "A3" 0.05225
+defineHierAntennaProp "NOR4_X1" "A3" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "NOR4_X1" "A4" 0.05225
+defineHierAntennaProp "NOR4_X1" "A4" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "NOR4_X1" "ZN" '(0.18235)
+defineHierAntennaProp "NOR4_X1" "ZN" '(
+("metal1" 0 0.13465 0 0 0.5031 0 0)
+)
+defineGateSize "NOR4_X2" "A1" 0.1045
+defineHierAntennaProp "NOR4_X2" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "NOR4_X2" "A2" 0.1045
+defineHierAntennaProp "NOR4_X2" "A2" '(
+("metal1" 0.1045 0.0819 0 0 0.2756 0 0)
+)
+defineGateSize "NOR4_X2" "A3" 0.1045
+defineHierAntennaProp "NOR4_X2" "A3" '(
+("metal1" 0.1045 0.1236 0 0 0.4238 0 0)
+)
+defineGateSize "NOR4_X2" "A4" 0.1045
+defineHierAntennaProp "NOR4_X2" "A4" '(
+("metal1" 0.1045 0.15925 0 0 0.5954 0 0)
+)
+defineDiodeProtection "NOR4_X2" "ZN" '(0.3206)
+defineHierAntennaProp "NOR4_X2" "ZN" '(
+("metal1" 0 0.230075 0 0 0.858 0 0)
+)
+defineGateSize "NOR4_X4" "A1" 0.209
+defineHierAntennaProp "NOR4_X4" "A1" '(
+("metal1" 0.209 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "NOR4_X4" "A2" 0.209
+defineHierAntennaProp "NOR4_X4" "A2" '(
+("metal1" 0.209 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "NOR4_X4" "A3" 0.209
+defineHierAntennaProp "NOR4_X4" "A3" '(
+("metal1" 0.209 0.016625 0 0 0.0702 0 0)
+)
+defineGateSize "NOR4_X4" "A4" 0.209
+defineHierAntennaProp "NOR4_X4" "A4" '(
+("metal1" 0.209 0.01575 0 0 0.0689 0 0)
+)
+defineDiodeProtection "NOR4_X4" "ZN" '(0.67025)
+defineHierAntennaProp "NOR4_X4" "ZN" '(
+("metal1" 0 0.466925 0 0 1.7316 0 0)
+)
+defineGateSize "OAI211_X1" "A" 0.05225
+defineHierAntennaProp "OAI211_X1" "A" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI211_X1" "B" 0.05225
+defineHierAntennaProp "OAI211_X1" "B" '(
+("metal1" 0.05225 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "OAI211_X1" "C1" 0.05225
+defineHierAntennaProp "OAI211_X1" "C1" '(
+("metal1" 0.05225 0.01925 0 0 0.0741 0 0)
+)
+defineGateSize "OAI211_X1" "C2" 0.05225
+defineHierAntennaProp "OAI211_X1" "C2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "OAI211_X1" "ZN" '(0.21245)
+defineHierAntennaProp "OAI211_X1" "ZN" '(
+("metal1" 0 0.11765 0 0 0.4238 0 0)
+)
+defineGateSize "OAI211_X2" "A" 0.1045
+defineHierAntennaProp "OAI211_X2" "A" '(
+("metal1" 0.1045 0.0891 0 0 0.2912 0 0)
+)
+defineGateSize "OAI211_X2" "B" 0.1045
+defineHierAntennaProp "OAI211_X2" "B" '(
+("metal1" 0.1045 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "OAI211_X2" "C1" 0.1045
+defineHierAntennaProp "OAI211_X2" "C1" '(
+("metal1" 0.1045 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "OAI211_X2" "C2" 0.1045
+defineHierAntennaProp "OAI211_X2" "C2" '(
+("metal1" 0.1045 0.096075 0 0 0.325 0 0)
+)
+defineDiodeProtection "OAI211_X2" "ZN" '(0.38395)
+defineHierAntennaProp "OAI211_X2" "ZN" '(
+("metal1" 0 0.20825 0 0 0.7917 0 0)
+)
+defineGateSize "OAI211_X4" "A" 0.209
+defineHierAntennaProp "OAI211_X4" "A" '(
+("metal1" 0.209 0.15165 0 0 0.5369 0 0)
+)
+defineGateSize "OAI211_X4" "B" 0.209
+defineHierAntennaProp "OAI211_X4" "B" '(
+("metal1" 0.209 0.09695 0 0 0.3601 0 0)
+)
+defineGateSize "OAI211_X4" "C1" 0.209
+defineHierAntennaProp "OAI211_X4" "C1" '(
+("metal1" 0.209 0.119 0 0 0.3588 0 0)
+)
+defineGateSize "OAI211_X4" "C2" 0.209
+defineHierAntennaProp "OAI211_X4" "C2" '(
+("metal1" 0.209 0.13915 0 0 0.5122 0 0)
+)
+defineDiodeProtection "OAI211_X4" "ZN" '(0.7616)
+defineHierAntennaProp "OAI211_X4" "ZN" '(
+("metal1" 0 0.4606 0 0 1.729 0 0)
+)
+defineGateSize "OAI21_X1" "A" 0.05225
+defineHierAntennaProp "OAI21_X1" "A" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI21_X1" "B1" 0.05225
+defineHierAntennaProp "OAI21_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI21_X1" "B2" 0.05225
+defineHierAntennaProp "OAI21_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "OAI21_X1" "ZN" '(0.1463)
+defineHierAntennaProp "OAI21_X1" "ZN" '(
+("metal1" 0 0.08085 0 0 0.3185 0 0)
+)
+defineGateSize "OAI21_X2" "A" 0.1045
+defineHierAntennaProp "OAI21_X2" "A" '(
+("metal1" 0.1045 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "OAI21_X2" "B1" 0.1045
+defineHierAntennaProp "OAI21_X2" "B1" '(
+("metal1" 0.1045 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "OAI21_X2" "B2" 0.1045
+defineHierAntennaProp "OAI21_X2" "B2" '(
+("metal1" 0.1045 0.09765 0 0 0.3263 0 0)
+)
+defineDiodeProtection "OAI21_X2" "ZN" '(0.2926)
+defineHierAntennaProp "OAI21_X2" "ZN" '(
+("metal1" 0 0.19285 0 0 0.7345 0 0)
+)
+defineGateSize "OAI21_X4" "A" 0.209
+defineHierAntennaProp "OAI21_X4" "A" '(
+("metal1" 0.209 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "OAI21_X4" "B1" 0.209
+defineHierAntennaProp "OAI21_X4" "B1" '(
+("metal1" 0.209 0.0974 0 0 0.3172 0 0)
+)
+defineGateSize "OAI21_X4" "B2" 0.209
+defineHierAntennaProp "OAI21_X4" "B2" '(
+("metal1" 0.209 0.146925 0 0 0.4966 0 0)
+)
+defineDiodeProtection "OAI21_X4" "ZN" '(0.5852)
+defineHierAntennaProp "OAI21_X4" "ZN" '(
+("metal1" 0 0.36505 0 0 1.3741 0 0)
+)
+defineGateSize "OAI221_X1" "A" 0.05225
+defineHierAntennaProp "OAI221_X1" "A" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI221_X1" "B1" 0.05225
+defineHierAntennaProp "OAI221_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI221_X1" "B2" 0.05225
+defineHierAntennaProp "OAI221_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI221_X1" "C1" 0.05225
+defineHierAntennaProp "OAI221_X1" "C1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI221_X1" "C2" 0.05225
+defineHierAntennaProp "OAI221_X1" "C2" '(
+("metal1" 0.05225 0.01925 0 0 0.0741 0 0)
+)
+defineDiodeProtection "OAI221_X1" "ZN" '(0.21245)
+defineHierAntennaProp "OAI221_X1" "ZN" '(
+("metal1" 0 0.12855 0 0 0.4706 0 0)
+)
+defineGateSize "OAI221_X2" "A" 0.1045
+defineHierAntennaProp "OAI221_X2" "A" '(
+("metal1" 0.1045 0.139 0 0 0.4927 0 0)
+)
+defineGateSize "OAI221_X2" "B1" 0.1045
+defineHierAntennaProp "OAI221_X2" "B1" '(
+("metal1" 0.1045 0.09475 0 0 0.3211 0 0)
+)
+defineGateSize "OAI221_X2" "B2" 0.1045
+defineHierAntennaProp "OAI221_X2" "B2" '(
+("metal1" 0.1045 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "OAI221_X2" "C1" 0.1045
+defineHierAntennaProp "OAI221_X2" "C1" '(
+("metal1" 0.1045 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "OAI221_X2" "C2" 0.1045
+defineHierAntennaProp "OAI221_X2" "C2" '(
+("metal1" 0.1045 0.09765 0 0 0.3263 0 0)
+)
+defineDiodeProtection "OAI221_X2" "ZN" '(0.3808)
+defineHierAntennaProp "OAI221_X2" "ZN" '(
+("metal1" 0 0.27335 0 0 0.9321 0 0)
+)
+defineGateSize "OAI221_X4" "A" 0.05225
+defineHierAntennaProp "OAI221_X4" "A" '(
+("metal1" 0.05225 0.020125 0 0 0.0754 0 0)
+)
+defineGateSize "OAI221_X4" "B1" 0.05225
+defineHierAntennaProp "OAI221_X4" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI221_X4" "B2" 0.05225
+defineHierAntennaProp "OAI221_X4" "B2" '(
+("metal1" 0.05225 0.025375 0 0 0.0832 0 0)
+)
+defineGateSize "OAI221_X4" "C1" 0.05225
+defineHierAntennaProp "OAI221_X4" "C1" '(
+("metal1" 0.05225 0.032375 0 0 0.0936 0 0)
+)
+defineGateSize "OAI221_X4" "C2" 0.05225
+defineHierAntennaProp "OAI221_X4" "C2" '(
+("metal1" 0.05225 0.020125 0 0 0.0754 0 0)
+)
+defineDiodeProtection "OAI221_X4" "ZN" '(0.2926)
+defineHierAntennaProp "OAI221_X4" "ZN" '(
+("metal1" 0 0.1911 0 0 0.6318 0 0)
+)
+defineGateSize "OAI222_X1" "A1" 0.05225
+defineHierAntennaProp "OAI222_X1" "A1" '(
+("metal1" 0.05225 0.021 0 0 0.0767 0 0)
+)
+defineGateSize "OAI222_X1" "A2" 0.05225
+defineHierAntennaProp "OAI222_X1" "A2" '(
+("metal1" 0.05225 0.018375 0 0 0.0728 0 0)
+)
+defineGateSize "OAI222_X1" "B1" 0.05225
+defineHierAntennaProp "OAI222_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI222_X1" "B2" 0.05225
+defineHierAntennaProp "OAI222_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI222_X1" "C1" 0.05225
+defineHierAntennaProp "OAI222_X1" "C1" '(
+("metal1" 0.05225 0.028 0 0 0.0871 0 0)
+)
+defineGateSize "OAI222_X1" "C2" 0.05225
+defineHierAntennaProp "OAI222_X1" "C2" '(
+("metal1" 0.05225 0.0245 0 0 0.0819 0 0)
+)
+defineDiodeProtection "OAI222_X1" "ZN" '(0.3227)
+defineHierAntennaProp "OAI222_X1" "ZN" '(
+("metal1" 0 0.13775 0 0 0.5005 0 0)
+)
+defineGateSize "OAI222_X2" "A1" 0.1045
+defineHierAntennaProp "OAI222_X2" "A1" '(
+("metal1" 0.1045 0.08205 0 0 0.2821 0 0)
+)
+defineGateSize "OAI222_X2" "A2" 0.1045
+defineHierAntennaProp "OAI222_X2" "A2" '(
+("metal1" 0.1045 0.0168 0 0 0.0806 0 0)
+)
+defineGateSize "OAI222_X2" "B1" 0.1045
+defineHierAntennaProp "OAI222_X2" "B1" '(
+("metal1" 0.1045 0.096425 0 0 0.3263 0 0)
+)
+defineGateSize "OAI222_X2" "B2" 0.1045
+defineHierAntennaProp "OAI222_X2" "B2" '(
+("metal1" 0.1045 0.01575 0 0 0.0689 0 0)
+)
+defineGateSize "OAI222_X2" "C1" 0.1045
+defineHierAntennaProp "OAI222_X2" "C1" '(
+("metal1" 0.1045 0.092225 0 0 0.3107 0 0)
+)
+defineGateSize "OAI222_X2" "C2" 0.1045
+defineHierAntennaProp "OAI222_X2" "C2" '(
+("metal1" 0.1045 0.01575 0 0 0.0689 0 0)
+)
+defineDiodeProtection "OAI222_X2" "ZN" '(0.52885)
+defineHierAntennaProp "OAI222_X2" "ZN" '(
+("metal1" 0 0.33845 0 0 1.2753 0 0)
+)
+defineGateSize "OAI222_X4" "A1" 0.05225
+defineHierAntennaProp "OAI222_X4" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI222_X4" "A2" 0.05225
+defineHierAntennaProp "OAI222_X4" "A2" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "OAI222_X4" "B1" 0.05225
+defineHierAntennaProp "OAI222_X4" "B1" '(
+("metal1" 0.05225 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "OAI222_X4" "B2" 0.05225
+defineHierAntennaProp "OAI222_X4" "B2" '(
+("metal1" 0.05225 0.0287 0 0 0.0897 0 0)
+)
+defineGateSize "OAI222_X4" "C1" 0.05225
+defineHierAntennaProp "OAI222_X4" "C1" '(
+("metal1" 0.05225 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "OAI222_X4" "C2" 0.05225
+defineHierAntennaProp "OAI222_X4" "C2" '(
+("metal1" 0.05225 0.0189 0 0 0.0715 0 0)
+)
+defineDiodeProtection "OAI222_X4" "ZN" '(0.2926)
+defineHierAntennaProp "OAI222_X4" "ZN" '(
+("metal1" 0 0.1967 0 0 0.6513 0 0)
+)
+defineGateSize "OAI22_X1" "A1" 0.05225
+defineHierAntennaProp "OAI22_X1" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI22_X1" "A2" 0.05225
+defineHierAntennaProp "OAI22_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI22_X1" "B1" 0.05225
+defineHierAntennaProp "OAI22_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI22_X1" "B2" 0.05225
+defineHierAntennaProp "OAI22_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "OAI22_X1" "ZN" '(0.1463)
+defineHierAntennaProp "OAI22_X1" "ZN" '(
+("metal1" 0 0.06125 0 0 0.2457 0 0)
+)
+defineGateSize "OAI22_X2" "A1" 0.1045
+defineHierAntennaProp "OAI22_X2" "A1" '(
+("metal1" 0.1045 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "OAI22_X2" "A2" 0.1045
+defineHierAntennaProp "OAI22_X2" "A2" '(
+("metal1" 0.1045 0.09665 0 0 0.3237 0 0)
+)
+defineGateSize "OAI22_X2" "B1" 0.1045
+defineHierAntennaProp "OAI22_X2" "B1" '(
+("metal1" 0.1045 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "OAI22_X2" "B2" 0.1045
+defineHierAntennaProp "OAI22_X2" "B2" '(
+("metal1" 0.1045 0.0951 0 0 0.3224 0 0)
+)
+defineDiodeProtection "OAI22_X2" "ZN" '(0.2926)
+defineHierAntennaProp "OAI22_X2" "ZN" '(
+("metal1" 0 0.20405 0 0 0.7761 0 0)
+)
+defineGateSize "OAI22_X4" "A1" 0.209
+defineHierAntennaProp "OAI22_X4" "A1" '(
+("metal1" 0.209 0.1072 0 0 0.3367 0 0)
+)
+defineGateSize "OAI22_X4" "A2" 0.209
+defineHierAntennaProp "OAI22_X4" "A2" '(
+("metal1" 0.209 0.146025 0 0 0.5187 0 0)
+)
+defineGateSize "OAI22_X4" "B1" 0.209
+defineHierAntennaProp "OAI22_X4" "B1" '(
+("metal1" 0.209 0.1072 0 0 0.3367 0 0)
+)
+defineGateSize "OAI22_X4" "B2" 0.209
+defineHierAntennaProp "OAI22_X4" "B2" '(
+("metal1" 0.209 0.14565 0 0 0.5135 0 0)
+)
+defineDiodeProtection "OAI22_X4" "ZN" '(0.5852)
+defineHierAntennaProp "OAI22_X4" "ZN" '(
+("metal1" 0 0.406 0 0 1.5262 0 0)
+)
+defineGateSize "OAI33_X1" "A1" 0.05225
+defineHierAntennaProp "OAI33_X1" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI33_X1" "A2" 0.05225
+defineHierAntennaProp "OAI33_X1" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI33_X1" "A3" 0.05225
+defineHierAntennaProp "OAI33_X1" "A3" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI33_X1" "B1" 0.05225
+defineHierAntennaProp "OAI33_X1" "B1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI33_X1" "B2" 0.05225
+defineHierAntennaProp "OAI33_X1" "B2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OAI33_X1" "B3" 0.05225
+defineHierAntennaProp "OAI33_X1" "B3" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineDiodeProtection "OAI33_X1" "ZN" '(0.189875)
+defineHierAntennaProp "OAI33_X1" "ZN" '(
+("metal1" 0 0.0987 0 0 0.3848 0 0)
+)
+defineGateSize "OR2_X1" "A1" 0.02625
+defineHierAntennaProp "OR2_X1" "A1" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR2_X1" "A2" 0.02625
+defineHierAntennaProp "OR2_X1" "A2" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "OR2_X1" "ZN" '(0.109725)
+defineHierAntennaProp "OR2_X1" "ZN" '(
+("metal1" 0 0.0981 0 0 0.3068 0 0)
+)
+defineGateSize "OR2_X2" "A1" 0.05225
+defineHierAntennaProp "OR2_X2" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR2_X2" "A2" 0.05225
+defineHierAntennaProp "OR2_X2" "A2" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "OR2_X2" "ZN" '(0.1463)
+defineHierAntennaProp "OR2_X2" "ZN" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "OR2_X4" "A1" 0.1045
+defineHierAntennaProp "OR2_X4" "A1" '(
+("metal1" 0.1045 0.02275 0 0 0.0793 0 0)
+)
+defineGateSize "OR2_X4" "A2" 0.1045
+defineHierAntennaProp "OR2_X4" "A2" '(
+("metal1" 0.1045 0.0874 0 0 0.325 0 0)
+)
+defineDiodeProtection "OR2_X4" "ZN" '(0.2926)
+defineHierAntennaProp "OR2_X4" "ZN" '(
+("metal1" 0 0.1784 0 0 0.5694 0 0)
+)
+defineGateSize "OR3_X1" "A1" 0.02625
+defineHierAntennaProp "OR3_X1" "A1" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR3_X1" "A2" 0.02625
+defineHierAntennaProp "OR3_X1" "A2" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR3_X1" "A3" 0.02625
+defineHierAntennaProp "OR3_X1" "A3" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "OR3_X1" "ZN" '(0.109725)
+defineHierAntennaProp "OR3_X1" "ZN" '(
+("metal1" 0 0.0981 0 0 0.3068 0 0)
+)
+defineGateSize "OR3_X2" "A1" 0.05225
+defineHierAntennaProp "OR3_X2" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR3_X2" "A2" 0.05225
+defineHierAntennaProp "OR3_X2" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR3_X2" "A3" 0.05225
+defineHierAntennaProp "OR3_X2" "A3" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "OR3_X2" "ZN" '(0.1463)
+defineHierAntennaProp "OR3_X2" "ZN" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "OR3_X4" "A1" 0.1045
+defineHierAntennaProp "OR3_X4" "A1" '(
+("metal1" 0.1045 0.0189 0 0 0.0715 0 0)
+)
+defineGateSize "OR3_X4" "A2" 0.1045
+defineHierAntennaProp "OR3_X4" "A2" '(
+("metal1" 0.1045 0.07755 0 0 0.2652 0 0)
+)
+defineGateSize "OR3_X4" "A3" 0.1045
+defineHierAntennaProp "OR3_X4" "A3" '(
+("metal1" 0.1045 0.1099 0 0 0.4095 0 0)
+)
+defineDiodeProtection "OR3_X4" "ZN" '(0.297825)
+defineHierAntennaProp "OR3_X4" "ZN" '(
+("metal1" 0 0.1813 0 0 0.5941 0 0)
+)
+defineGateSize "OR4_X1" "A1" 0.02625
+defineHierAntennaProp "OR4_X1" "A1" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR4_X1" "A2" 0.02625
+defineHierAntennaProp "OR4_X1" "A2" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR4_X1" "A3" 0.02625
+defineHierAntennaProp "OR4_X1" "A3" '(
+("metal1" 0.02625 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR4_X1" "A4" 0.02625
+defineHierAntennaProp "OR4_X1" "A4" '(
+("metal1" 0.02625 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "OR4_X1" "ZN" '(0.109725)
+defineHierAntennaProp "OR4_X1" "ZN" '(
+("metal1" 0 0.0981 0 0 0.3068 0 0)
+)
+defineGateSize "OR4_X2" "A1" 0.05225
+defineHierAntennaProp "OR4_X2" "A1" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR4_X2" "A2" 0.05225
+defineHierAntennaProp "OR4_X2" "A2" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR4_X2" "A3" 0.05225
+defineHierAntennaProp "OR4_X2" "A3" '(
+("metal1" 0.05225 0.021875 0 0 0.078 0 0)
+)
+defineGateSize "OR4_X2" "A4" 0.05225
+defineHierAntennaProp "OR4_X2" "A4" '(
+("metal1" 0.05225 0.02275 0 0 0.0793 0 0)
+)
+defineDiodeProtection "OR4_X2" "ZN" '(0.1463)
+defineHierAntennaProp "OR4_X2" "ZN" '(
+("metal1" 0 0.0935 0 0 0.3081 0 0)
+)
+defineGateSize "OR4_X4" "A1" 0.1045
+defineHierAntennaProp "OR4_X4" "A1" '(
+("metal1" 0.1045 0.014875 0 0 0.0676 0 0)
+)
+defineGateSize "OR4_X4" "A2" 0.1045
+defineHierAntennaProp "OR4_X4" "A2" '(
+("metal1" 0.1045 0.08445 0 0 0.2873 0 0)
+)
+defineGateSize "OR4_X4" "A3" 0.1045
+defineHierAntennaProp "OR4_X4" "A3" '(
+("metal1" 0.1045 0.1162 0 0 0.4264 0 0)
+)
+defineGateSize "OR4_X4" "A4" 0.1045
+defineHierAntennaProp "OR4_X4" "A4" '(
+("metal1" 0.1045 0.161175 0 0 0.5954 0 0)
+)
+defineDiodeProtection "OR4_X4" "ZN" '(0.2926)
+defineHierAntennaProp "OR4_X4" "ZN" '(
+("metal1" 0 0.1967 0 0 0.6513 0 0)
+)
+defineGateSize "SDFFRS_X1" "D" 0.03475
+defineHierAntennaProp "SDFFRS_X1" "D" '(
+("metal1" 0.03475 0.04085 0 0 0.1053 0 0)
+)
+defineGateSize "SDFFRS_X1" "RN" 0.0615
+defineHierAntennaProp "SDFFRS_X1" "RN" '(
+("metal1" 0.0615 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "SDFFRS_X1" "SE" 0.05775
+defineHierAntennaProp "SDFFRS_X1" "SE" '(
+("metal1" 0.05775 0.09325 0 0 0.3367 0 0)
+)
+defineGateSize "SDFFRS_X1" "SI" 0.02625
+defineHierAntennaProp "SDFFRS_X1" "SI" '(
+("metal1" 0.02625 0.01885 0 0 0.0715 0 0)
+)
+defineGateSize "SDFFRS_X1" "SN" 0.03525
+defineHierAntennaProp "SDFFRS_X1" "SN" '(
+("metal1" 0.03525 0.0175 0 0 0.0715 0 0)
+)
+defineGateSize "SDFFRS_X1" "CK" 0.02625
+defineHierAntennaProp "SDFFRS_X1" "CK" '(
+("metal1" 0.02625 0.0133 0 0 0.0611 0 0)
+)
+defineDiodeProtection "SDFFRS_X1" "Q" '(0.109725)
+defineHierAntennaProp "SDFFRS_X1" "Q" '(
+("metal1" 0 0.071825 0 0 0.2418 0 0)
+)
+defineDiodeProtection "SDFFRS_X1" "QN" '(0.109725)
+defineHierAntennaProp "SDFFRS_X1" "QN" '(
+("metal1" 0 0.0374 0 0 0.1365 0 0)
+)
+defineGateSize "SDFFRS_X2" "D" 0.03475
+defineHierAntennaProp "SDFFRS_X2" "D" '(
+("metal1" 0.03475 0.0203 0 0 0.0741 0 0)
+)
+defineGateSize "SDFFRS_X2" "RN" 0.075
+defineHierAntennaProp "SDFFRS_X2" "RN" '(
+("metal1" 0.075 0.024025 0 0 0.0806 0 0)
+)
+defineGateSize "SDFFRS_X2" "SE" 0.05775
+defineHierAntennaProp "SDFFRS_X2" "SE" '(
+("metal1" 0.05775 0.07535 0 0 0.2769 0 0)
+)
+defineGateSize "SDFFRS_X2" "SI" 0.02625
+defineHierAntennaProp "SDFFRS_X2" "SI" '(
+("metal1" 0.02625 0.0203 0 0 0.0741 0 0)
+)
+defineGateSize "SDFFRS_X2" "SN" 0.04875
+defineHierAntennaProp "SDFFRS_X2" "SN" '(
+("metal1" 0.04875 0.014725 0 0 0.065 0 0)
+)
+defineGateSize "SDFFRS_X2" "CK" 0.02625
+defineHierAntennaProp "SDFFRS_X2" "CK" '(
+("metal1" 0.02625 0.01155 0 0 0.0611 0 0)
+)
+defineDiodeProtection "SDFFRS_X2" "Q" '(0.1463)
+defineHierAntennaProp "SDFFRS_X2" "Q" '(
+("metal1" 0 0.078 0 0 0.2743 0 0)
+)
+defineDiodeProtection "SDFFRS_X2" "QN" '(0.1463)
+defineHierAntennaProp "SDFFRS_X2" "QN" '(
+("metal1" 0 0.062775 0 0 0.156 0 0)
+)
+defineGateSize "SDFFR_X1" "D" 0.03475
+defineHierAntennaProp "SDFFR_X1" "D" '(
+("metal1" 0.03475 0.0175 0 0 0.0689 0 0)
+)
+defineGateSize "SDFFR_X1" "RN" 0.03525
+defineHierAntennaProp "SDFFR_X1" "RN" '(
+("metal1" 0.03525 0.0147 0 0 0.0637 0 0)
+)
+defineGateSize "SDFFR_X1" "SE" 0.05775
+defineHierAntennaProp "SDFFR_X1" "SE" '(
+("metal1" 0.05775 0.0651 0 0 0.2366 0 0)
+)
+defineGateSize "SDFFR_X1" "SI" 0.02625
+defineHierAntennaProp "SDFFR_X1" "SI" '(
+("metal1" 0.02625 0.017575 0 0 0.0728 0 0)
+)
+defineGateSize "SDFFR_X1" "CK" 0.02625
+defineHierAntennaProp "SDFFR_X1" "CK" '(
+("metal1" 0.02625 0.0405 0 0 0.1053 0 0)
+)
+defineDiodeProtection "SDFFR_X1" "Q" '(0.109725)
+defineHierAntennaProp "SDFFR_X1" "Q" '(
+("metal1" 0 0.06225 0 0 0.2353 0 0)
+)
+defineDiodeProtection "SDFFR_X1" "QN" '(0.109725)
+defineHierAntennaProp "SDFFR_X1" "QN" '(
+("metal1" 0 0.0616 0 0 0.247 0 0)
+)
+defineGateSize "SDFFR_X2" "D" 0.03475
+defineHierAntennaProp "SDFFR_X2" "D" '(
+("metal1" 0.03475 0.025625 0 0 0.0858 0 0)
+)
+defineGateSize "SDFFR_X2" "RN" 0.03525
+defineHierAntennaProp "SDFFR_X2" "RN" '(
+("metal1" 0.03525 0.0175 0 0 0.0689 0 0)
+)
+defineGateSize "SDFFR_X2" "SE" 0.05775
+defineHierAntennaProp "SDFFR_X2" "SE" '(
+("metal1" 0.05775 0.07035 0 0 0.182 0 0)
+)
+defineGateSize "SDFFR_X2" "SI" 0.02625
+defineHierAntennaProp "SDFFR_X2" "SI" '(
+("metal1" 0.02625 0.02465 0 0 0.0819 0 0)
+)
+defineGateSize "SDFFR_X2" "CK" 0.02625
+defineHierAntennaProp "SDFFR_X2" "CK" '(
+("metal1" 0.02625 0.019575 0 0 0.0728 0 0)
+)
+defineDiodeProtection "SDFFR_X2" "Q" '(0.1463)
+defineHierAntennaProp "SDFFR_X2" "Q" '(
+("metal1" 0 0.05185 0 0 0.1807 0 0)
+)
+defineDiodeProtection "SDFFR_X2" "QN" '(0.1463)
+defineHierAntennaProp "SDFFR_X2" "QN" '(
+("metal1" 0 0.053825 0 0 0.1833 0 0)
+)
+defineGateSize "SDFFS_X1" "D" 0.03475
+defineHierAntennaProp "SDFFS_X1" "D" '(
+("metal1" 0.03475 0.0195 0 0 0.0728 0 0)
+)
+defineGateSize "SDFFS_X1" "SE" 0.05775
+defineHierAntennaProp "SDFFS_X1" "SE" '(
+("metal1" 0.05775 0.077625 0 0 0.2626 0 0)
+)
+defineGateSize "SDFFS_X1" "SI" 0.02625
+defineHierAntennaProp "SDFFS_X1" "SI" '(
+("metal1" 0.02625 0.0238 0 0 0.0806 0 0)
+)
+defineGateSize "SDFFS_X1" "SN" 0.03525
+defineHierAntennaProp "SDFFS_X1" "SN" '(
+("metal1" 0.03525 0.01395 0 0 0.0637 0 0)
+)
+defineGateSize "SDFFS_X1" "CK" 0.02625
+defineHierAntennaProp "SDFFS_X1" "CK" '(
+("metal1" 0.02625 0.020475 0 0 0.078 0 0)
+)
+defineDiodeProtection "SDFFS_X1" "Q" '(0.109725)
+defineHierAntennaProp "SDFFS_X1" "Q" '(
+("metal1" 0 0.06625 0 0 0.2457 0 0)
+)
+defineDiodeProtection "SDFFS_X1" "QN" '(0.109725)
+defineHierAntennaProp "SDFFS_X1" "QN" '(
+("metal1" 0 0.08105 0 0 0.3081 0 0)
+)
+defineGateSize "SDFFS_X2" "D" 0.03475
+defineHierAntennaProp "SDFFS_X2" "D" '(
+("metal1" 0.03475 0.02125 0 0 0.0767 0 0)
+)
+defineGateSize "SDFFS_X2" "SE" 0.05775
+defineHierAntennaProp "SDFFS_X2" "SE" '(
+("metal1" 0.05775 0.068625 0 0 0.2496 0 0)
+)
+defineGateSize "SDFFS_X2" "SI" 0.02625
+defineHierAntennaProp "SDFFS_X2" "SI" '(
+("metal1" 0.02625 0.0253 0 0 0.0871 0 0)
+)
+defineGateSize "SDFFS_X2" "SN" 0.06125
+defineHierAntennaProp "SDFFS_X2" "SN" '(
+("metal1" 0.06125 0.14245 0 0 0.5473 0 0)
+)
+defineGateSize "SDFFS_X2" "CK" 0.02625
+defineHierAntennaProp "SDFFS_X2" "CK" '(
+("metal1" 0.02625 0.0168 0 0 0.0676 0 0)
+)
+defineDiodeProtection "SDFFS_X2" "Q" '(0.1463)
+defineHierAntennaProp "SDFFS_X2" "Q" '(
+("metal1" 0 0.0273 0 0 0.1196 0 0)
+)
+defineDiodeProtection "SDFFS_X2" "QN" '(0.1463)
+defineHierAntennaProp "SDFFS_X2" "QN" '(
+("metal1" 0 0.0273 0 0 0.1196 0 0)
+)
+defineGateSize "SDFF_X1" "D" 0.03475
+defineHierAntennaProp "SDFF_X1" "D" '(
+("metal1" 0.03475 0.02175 0 0 0.0767 0 0)
+)
+defineGateSize "SDFF_X1" "SE" 0.05775
+defineHierAntennaProp "SDFF_X1" "SE" '(
+("metal1" 0.05775 0.05405 0 0 0.1768 0 0)
+)
+defineGateSize "SDFF_X1" "SI" 0.02625
+defineHierAntennaProp "SDFF_X1" "SI" '(
+("metal1" 0.02625 0.023625 0 0 0.0806 0 0)
+)
+defineGateSize "SDFF_X1" "CK" 0.02625
+defineHierAntennaProp "SDFF_X1" "CK" '(
+("metal1" 0.02625 0.0328 0 0 0.0949 0 0)
+)
+defineDiodeProtection "SDFF_X1" "Q" '(0.109725)
+defineHierAntennaProp "SDFF_X1" "Q" '(
+("metal1" 0 0.04445 0 0 0.1833 0 0)
+)
+defineDiodeProtection "SDFF_X1" "QN" '(0.109725)
+defineHierAntennaProp "SDFF_X1" "QN" '(
+("metal1" 0 0.079875 0 0 0.2964 0 0)
+)
+defineGateSize "SDFF_X2" "D" 0.03475
+defineHierAntennaProp "SDFF_X2" "D" '(
+("metal1" 0.03475 0.0231 0 0 0.0793 0 0)
+)
+defineGateSize "SDFF_X2" "SE" 0.05775
+defineHierAntennaProp "SDFF_X2" "SE" '(
+("metal1" 0.05775 0.06405 0 0 0.169 0 0)
+)
+defineGateSize "SDFF_X2" "SI" 0.02625
+defineHierAntennaProp "SDFF_X2" "SI" '(
+("metal1" 0.02625 0.014 0 0 0.0624 0 0)
+)
+defineGateSize "SDFF_X2" "CK" 0.02625
+defineHierAntennaProp "SDFF_X2" "CK" '(
+("metal1" 0.02625 0.0296 0 0 0.0897 0 0)
+)
+defineDiodeProtection "SDFF_X2" "Q" '(0.1463)
+defineHierAntennaProp "SDFF_X2" "Q" '(
+("metal1" 0 0.032725 0 0 0.1222 0 0)
+)
+defineDiodeProtection "SDFF_X2" "QN" '(0.1463)
+defineHierAntennaProp "SDFF_X2" "QN" '(
+("metal1" 0 0.055675 0 0 0.1924 0 0)
+)
+defineGateSize "TBUF_X1" "A" 0.0525
+defineHierAntennaProp "TBUF_X1" "A" '(
+("metal1" 0.0525 0.0427 0 0 0.1768 0 0)
+)
+defineGateSize "TBUF_X1" "EN" 0.0525
+defineHierAntennaProp "TBUF_X1" "EN" '(
+("metal1" 0.0525 0.02925 0 0 0.0923 0 0)
+)
+defineDiodeProtection "TBUF_X1" "Z" '(0.093975)
+defineHierAntennaProp "TBUF_X1" "Z" '(
+("metal1" 0 0.0959 0 0 0.3211 0 0)
+)
+defineGateSize "TBUF_X16" "A" 0.209
+defineHierAntennaProp "TBUF_X16" "A" '(
+("metal1" 0.209 0.08575 0 0 0.3367 0 0)
+)
+defineGateSize "TBUF_X16" "EN" 0.15675
+defineHierAntennaProp "TBUF_X16" "EN" '(
+("metal1" 0.15675 0.0707 0 0 0.2808 0 0)
+)
+defineDiodeProtection "TBUF_X16" "Z" '(1.0024)
+defineHierAntennaProp "TBUF_X16" "Z" '(
+("metal1" 0 0.897925 0 0 1.8239 0 0)
+)
+defineGateSize "TBUF_X2" "A" 0.1045
+defineHierAntennaProp "TBUF_X2" "A" '(
+("metal1" 0.1045 0.0203 0 0 0.0741 0 0)
+)
+defineGateSize "TBUF_X2" "EN" 0.0785
+defineHierAntennaProp "TBUF_X2" "EN" '(
+("metal1" 0.0785 0.13335 0 0 0.4446 0 0)
+)
+defineDiodeProtection "TBUF_X2" "Z" '(0.1253)
+defineHierAntennaProp "TBUF_X2" "Z" '(
+("metal1" 0 0.06475 0 0 0.2587 0 0)
+)
+defineGateSize "TBUF_X4" "A" 0.1045
+defineHierAntennaProp "TBUF_X4" "A" '(
+("metal1" 0.1045 0.01925 0 0 0.0741 0 0)
+)
+defineGateSize "TBUF_X4" "EN" 0.0785
+defineHierAntennaProp "TBUF_X4" "EN" '(
+("metal1" 0.0785 0.01575 0 0 0.0689 0 0)
+)
+defineDiodeProtection "TBUF_X4" "Z" '(0.2506)
+defineHierAntennaProp "TBUF_X4" "Z" '(
+("metal1" 0 0.127925 0 0 0.4524 0 0)
+)
+defineGateSize "TBUF_X8" "A" 0.209
+defineHierAntennaProp "TBUF_X8" "A" '(
+("metal1" 0.209 0.0847 0 0 0.3328 0 0)
+)
+defineGateSize "TBUF_X8" "EN" 0.15675
+defineHierAntennaProp "TBUF_X8" "EN" '(
+("metal1" 0.15675 0.08405 0 0 0.2821 0 0)
+)
+defineDiodeProtection "TBUF_X8" "Z" '(0.505675)
+defineHierAntennaProp "TBUF_X8" "Z" '(
+("metal1" 0 0.406725 0 0 1.2363 0 0)
+)
+defineGateSize "TINV_X1" "EN" 0.05325
+defineHierAntennaProp "TINV_X1" "EN" '(
+("metal1" 0.05325 0.0812 0 0 0.2483 0 0)
+)
+defineGateSize "TINV_X1" "I" 0.04475
+defineHierAntennaProp "TINV_X1" "I" '(
+("metal1" 0.04475 0.021 0 0 0.0806 0 0)
+)
+defineDiodeProtection "TINV_X1" "ZN" '(0.093975)
+defineHierAntennaProp "TINV_X1" "ZN" '(
+("metal1" 0 0.08395 0 0 0.3055 0 0)
+)
+defineGateSize "TLAT_X1" "D" 0.03475
+defineHierAntennaProp "TLAT_X1" "D" '(
+("metal1" 0.03475 0.0255 0 0 0.0923 0 0)
+)
+defineGateSize "TLAT_X1" "G" 0.02625
+defineHierAntennaProp "TLAT_X1" "G" '(
+("metal1" 0.02625 0.031725 0 0 0.0962 0 0)
+)
+defineGateSize "TLAT_X1" "OE" 0.044
+defineHierAntennaProp "TLAT_X1" "OE" '(
+("metal1" 0.044 0.06015 0 0 0.1716 0 0)
+)
+defineDiodeProtection "TLAT_X1" "Q" '(0.111875)
+defineHierAntennaProp "TLAT_X1" "Q" '(
+("metal1" 0 0.1004 0 0 0.3159 0 0)
+)
+defineGateSize "XNOR2_X1" "A" 0.0785
+defineHierAntennaProp "XNOR2_X1" "A" '(
+("metal1" 0.0785 0.0688 0 0 0.2496 0 0)
+)
+defineGateSize "XNOR2_X1" "B" 0.0785
+defineHierAntennaProp "XNOR2_X1" "B" '(
+("metal1" 0.0785 0.0763 0 0 0.2782 0 0)
+)
+defineDiodeProtection "XNOR2_X1" "ZN" '(0.1463)
+defineHierAntennaProp "XNOR2_X1" "ZN" '(
+("metal1" 0 0.112 0 0 0.4342 0 0)
+)
+defineGateSize "XNOR2_X2" "A" 0.15675
+defineHierAntennaProp "XNOR2_X2" "A" '(
+("metal1" 0.15675 0.01225 0 0 0.0637 0 0)
+)
+defineGateSize "XNOR2_X2" "B" 0.15675
+defineHierAntennaProp "XNOR2_X2" "B" '(
+("metal1" 0.15675 0.112 0 0 0.4342 0 0)
+)
+defineDiodeProtection "XNOR2_X2" "ZN" '(0.32165)
+defineHierAntennaProp "XNOR2_X2" "ZN" '(
+("metal1" 0 0.22065 0 0 0.8346 0 0)
+)
+defineGateSize "XOR2_X1" "A" 0.0785
+defineHierAntennaProp "XOR2_X1" "A" '(
+("metal1" 0.0785 0.063075 0 0 0.2392 0 0)
+)
+defineGateSize "XOR2_X1" "B" 0.0785
+defineHierAntennaProp "XOR2_X1" "B" '(
+("metal1" 0.0785 0.072875 0 0 0.2756 0 0)
+)
+defineDiodeProtection "XOR2_X1" "Z" '(0.1463)
+defineHierAntennaProp "XOR2_X1" "Z" '(
+("metal1" 0 0.11095 0 0 0.4303 0 0)
+)
+defineGateSize "XOR2_X2" "A" 0.15675
+defineHierAntennaProp "XOR2_X2" "A" '(
+("metal1" 0.15675 0.1613 0 0 0.5668 0 0)
+)
+defineGateSize "XOR2_X2" "B" 0.15675
+defineHierAntennaProp "XOR2_X2" "B" '(
+("metal1" 0.15675 0.1099 0 0 0.325 0 0)
+)
+defineDiodeProtection "XOR2_X2" "Z" '(0.2926)
+defineHierAntennaProp "XOR2_X2" "Z" '(
+("metal1" 0 0.157225 0 0 0.5902 0 0)
+)
