@@ -68,6 +68,13 @@ SRAM LEF has pins that are not on the manufacturing grid.
 
 Since this is a fake technology, we think this is okay.
 
+Actually, the DRC rule deck also says that the grid should be 2.5nm:
+
+    Grid.1 {
+    @All shapes must be on a 2.5 nm grid
+    OFFGRID active 5 5
+    }
+
 --------------------------------------------------------------------------
 Modifications -- 12/17/2019
 --------------------------------------------------------------------------
