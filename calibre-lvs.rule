@@ -19,6 +19,9 @@ MASK RESULTS DATABASE maskdb
 precision 10000
 resolution 250
 
+SOURCE CASE YES
+LAYOUT CASE YES
+
 TEXT LAYER metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10
 PORT LAYER TEXT  metal1 metal2 metal3 metal4 metal5 metal6 metal7 metal8 metal9 metal10
 
