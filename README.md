@@ -29,6 +29,27 @@ kit for designs built with mflowgen. See more information about mflowgen
 at its github repo.
 
 --------------------------------------------------------------------------
+Modifications -- 03/08/2020
+--------------------------------------------------------------------------
+
+Changes to make Calibre LVS pass more robustly:
+
+- calibre-lvs.rule
+
+We added case sensitivity to the commands:
+
+    SOURCE CASE YES
+    LAYOUT CASE YES
+
+The tools sometimes create wires like "n52" and "N52" in the same
+module, and they are meant to be separate nets. If case sensitivity
+options are set to "NO", this turns into multiple drivers from
+Calibre's viewpoint.
+
+This change reduces the number of unexpected LVS issues for most
+designs.
+
+--------------------------------------------------------------------------
 Modifications -- 03/04/2020
 --------------------------------------------------------------------------
 
